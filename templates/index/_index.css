@@ -1,0 +1,42 @@
+:root
+{
+  --index-flex--gap: 25px;
+  --index-item--padding: 25px;
+  --index-item--size: 300px;
+}
+
+section.index-flex
+{
+  gap: var(--index-flex--gap);
+}
+
+a.index--item
+{
+  position: relative;
+  padding: var(--index-item--padding);
+  flex-basis: var(--index-item--size);
+  overflow: hidden;
+}
+
+a.index--item > div.index--item--image
+{
+  display: block;
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: scale(1);
+  transition: all 250ms ease-in-out;
+}
+
+a.index--item:hover > div.index--item--image
+{
+  transform: scale(1.1);
+}

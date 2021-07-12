@@ -1,0 +1,33 @@
+:root
+{
+
+}
+
+section.cta-tiles
+{
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  gap: 30px;
+  width: 100%;
+  padding: 0 calc(calc(100% - var(--theme__sizes__page--width)) / 2);
+}
+
+section.cta-tiles.cta-tiles-layout-cta-tile-background
+{
+  position: relative;
+}
+
+section.cta-tiles.cta-tiles-layout-cta-tile-background::before
+{
+  content: '';
+  display: block;
+  height: 865px;
+  width: 100%;
+  position: absolute;
+  top: -150px;
+  left: 0px;
+  right: 0px;
+  z-index: -5;
+  background-color: #202020;
+}

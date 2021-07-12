@@ -1,0 +1,25 @@
+:root
+{
+
+}
+
+img.fullwidth-image
+{
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  max-width: 1480px;
+  margin: 0 auto;
+}
+
+img.fullwidth-image.width-leading
+{
+  width: 100%;
+  height: auto;
+}
+
+img.fullwidth-image.height-leading
+{
+  width: auto;
+  width: 100%;
+}

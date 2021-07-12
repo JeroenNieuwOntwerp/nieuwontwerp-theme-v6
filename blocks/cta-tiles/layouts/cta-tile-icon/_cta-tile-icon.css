@@ -1,0 +1,42 @@
+:root
+{
+
+}
+
+.cta-tile-icon
+{
+  border-top: 2px solid #F1F1F1;
+  flex-basis: 277.5px;
+  box-sizing: border-box;
+  padding: 20px 20px 20px 20px;
+  background: #FFFFFF;
+  box-shadow: var(--theme__styling__box-shadow);
+}
+
+.cta-tile-icon,
+.cta-tile-icon:hover,
+.cta-tile-icon:active,
+.cta-tile-icon:visited
+{
+  text-decoration: none;
+}
+
+.cta-tile-icon > img.cta-tile--image
+{
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.cta-tile-icon > h4
+{
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  font-size: 1rem;
+  line-height: 1.5em;
+}
+
+.cta-tile-icon .button__wrapper
+{
+  transform: translateX(-20px);
+}

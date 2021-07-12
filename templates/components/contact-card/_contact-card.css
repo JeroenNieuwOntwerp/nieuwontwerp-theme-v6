@@ -1,0 +1,29 @@
+:root
+{
+
+}
+
+span.contact-card
+{
+  display: inline-block;
+  flex-basis: 250px;
+  padding: 25px;
+}
+
+h3.contact-card--title
+{
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+p.contact-card--job
+{
+  font-size: .6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1px;
+  color: var(--theme__color--gray);
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}

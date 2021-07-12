@@ -1,0 +1,81 @@
+:root
+{
+
+}
+
+.cta-tile-background
+{
+  flex-basis: 277.5px;
+  box-sizing: border-box;
+  height: 410px;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+}
+
+.cta-tile-background,
+.cta-tile-background:hover,
+.cta-tile-background:active,
+.cta-tile-background:visited
+{
+  text-decoration: none;
+}
+
+.cta-tile-background > img.cta-tile--image
+{
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  transform: scale(1);
+  object-fit: cover;
+  object-position: right;
+  transition: all 250ms ease-in-out;
+}
+
+.cta-tile-background:hover > img.cta-tile--image
+{
+    transform: scale(1.125);
+}
+
+.cta-tile-background > div.cta-tile--overlay
+{
+  display: block;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+
+
+.cta-tile-background > span.cta-tile--content
+{
+  display: block;
+  position: relative;
+  z-index: 3;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+  align-self: flex-end;
+}
+
+.cta-tile-background > span.cta-tile--content h3
+{
+  font-size: 1.375rem;
+  line-height: 2em;
+  font-weight: 700;
+}
+
+.cta-tile-background .button__wrapper
+{
+  transform: translateX(-20px);
+}

@@ -1,0 +1,132 @@
+section.photo-sliders
+{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 100px 0 0 0;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+section.photo-sliders > div.primary
+{
+  position: relative;
+  flex-basis: 1000px;
+  flex-grow: 1;
+  max-width: 1000px;
+  overflow: hidden;
+  height: 640px;
+}
+
+section.photo-sliders > div.secondary
+{
+  position: relative;
+  flex-basis: 500px;
+  flex-grow: 1;
+  max-width: 500px;
+  overflow: hidden;
+  height: 640px;
+  transform: translateX(-50px) translateY(-100px);
+
+}
+
+section.photo-sliders.primary-left > div.secondary::before
+{
+  content: '';
+  position: absolute;
+  display: block;
+  top: 100px;
+  left: 0px;
+  background: rgba(255,255,255,.345);
+  height: 540px;
+  width: 50px;
+  z-index: 1;
+}
+
+section.photo-sliders.primary-right > div.secondary
+{
+  transform: translateX(50px) translateY(-100px);
+}
+
+section.photo-sliders.primary-right > div.primary::before
+{
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0px;
+  left: 0px;
+  background: rgba(255,255,255,.345);
+  height: 540px;
+  width: 50px;
+  z-index: 1;
+}
+
+section.photo-sliders .slick-slider,
+section.photo-sliders .slick-list,
+section.photo-sliders .slick-track,
+section.photo-sliders .slick-slide,
+section.photo-sliders .slick-slide div
+{
+  height: 100%;
+}
+
+section.photo-sliders .slick-arrow
+{
+  overflow: hidden;
+  border: none;
+  border-radius: 0;
+  display: block;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  bottom: 0px;
+  left: 50%;
+  z-index: 4;
+  cursor: pointer;
+  text-indent: 3000px;
+}
+
+section.photo-sliders .slick-arrow.slick-prev
+{
+  transform: translateX(-75%);
+  background-color: #FFFFFF;
+}
+
+section.photo-sliders .slick-arrow.slick-next
+{
+  transform: translateX(calc(25% - 1px));
+  background-color: var(--theme__color--gray-light);
+}
+
+section.photo-sliders .slick-arrow.slick-prev:before,
+section.photo-sliders .slick-arrow.slick-next:before
+{
+  content: '';
+  background-image: url('../../assets/img/chevron-black.svg');
+  background-size: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 300ms cubic-bezier(0.0, 0.0, 0.2, 1);
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+section.photo-sliders .slick-arrow.slick-next:before
+{
+  transform: rotate(180deg);
+}
+
+section.photo-sliders .slick-arrow.slick-prev:hover:before,
+section.photo-sliders .slick-arrow.slick-next:hover:before
+{
+  background-image: url('../../assets/img/chevron-red.svg');
+}
+
+img.slider-image
+{
+  object-fit: cover;
+}

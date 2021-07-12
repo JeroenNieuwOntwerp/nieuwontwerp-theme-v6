@@ -1,0 +1,11 @@
+:root
+{
+  --archive__flex--gap: 20px;
+}
+
+section.archive-flex
+{
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--archive__flex--gap);
+}

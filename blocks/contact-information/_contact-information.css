@@ -1,0 +1,10 @@
+:root
+{
+
+}
+
+section.contact-information
+{
+  display: flex;
+  flex-wrap: wrap;
+}

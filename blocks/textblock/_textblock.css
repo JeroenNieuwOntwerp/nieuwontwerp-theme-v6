@@ -1,0 +1,64 @@
+section.textblock
+{
+  width: 100%;
+  max-width: calc(25px + var(--theme__sizes__textrow--width));
+  margin: 0 auto;
+}
+
+article.text--container
+{
+  padding: 5px 20px;
+}
+
+article.text--container > h1,
+article.text--container > h2
+{
+  margin-left: -20px;
+  padding: 0 0 .83rem 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: 'Futura Std Bold';
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.68px;
+}
+
+article.text--container > h2
+{
+  font-size: 2.14em;
+}
+
+article.text--container > h3
+{
+  font-size: 1.57em;
+  font-weight: bold;
+  line-height: 1.45em;
+  color: var(--theme__color--gray);
+  padding: 0 0 .83rem 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+
+article.text--container > p
+{
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-bottom: .83em;
+}
+
+article.text--container > p:last-child
+{
+  padding-bottom: 0;
+}
+
+article.text--container.text--bold
+{
+  font-size: 1.286em;
+  font-weight: bold;
+}
+
+article.text--container.text--border-left
+{
+  border-left: 2px dotted black;
+}

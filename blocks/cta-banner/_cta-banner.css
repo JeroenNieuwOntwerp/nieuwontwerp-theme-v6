@@ -1,0 +1,65 @@
+:root
+{
+
+}
+
+section.cta-banner
+{
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: calc(25px + var(--theme__sizes__page--width));
+  margin: 0 auto;
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+section.cta-banner > img.cta-banner--image
+{
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  transform: scale(1);
+  object-fit: cover;
+  object-position: right;
+  transition: all 250ms ease-in-out;
+}
+
+section.cta-banner:hover > img.cta-banner--image
+{
+    transform: scale(1.015);
+}
+
+section.cta-banner > div.cta-banner--overlay
+{
+  display: block;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+
+section.cta-banner > span.cta-banner--content
+{
+  display: block;
+  position: relative;
+  z-index: 3;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 40px;
+}
+
+section.cta-banner .button__wrapper
+{
+  transform: translateX(-20px);
+}

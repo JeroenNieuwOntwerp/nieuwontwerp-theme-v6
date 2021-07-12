@@ -1,0 +1,96 @@
+:root
+{
+
+}
+
+section.text-and-photo
+{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 75px 25px 125px 25px;
+  width: 100%;
+  max-width: calc(50px + var(--theme__sizes__page--width));
+  margin: 0 auto;
+}
+
+section.text-and-photo > article.text-and-photo--text
+{
+  flex-basis: 480px;
+  position: relative;
+  box-sizing: border-box;
+  padding: 75px;
+  transform: translateY(50px);
+  font-weight: 700;
+  font-size: 1.375rem;
+  line-height: 1.4545em;
+}
+
+
+section.text-and-photo.is-quote > article.text-and-photo--text
+{
+  padding: 200px 75px 130px 115px;
+}
+
+section.text-and-photo > article.text-and-photo--text > svg
+{
+  position: absolute;
+  width: auto;
+  height: 50px;
+  top: 175px;
+  left: 55px;
+}
+
+section.text-and-photo > article.text-and-photo--text::before
+{
+  content: '';
+  display: block;
+  height: 100px;
+  width: 350px;
+  position: absolute;
+  left: -350px;
+  bottom: 0px;
+  background-image: url('../../assets/img/strokes-gray.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+section.text-and-photo > article.text-and-photo--text::after
+{
+  content: '';
+  display: block;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  left: -50px;
+  bottom: 0px;
+  background-color: white;
+}
+
+section.text-and-photo > img.text-and-photo--photo
+{
+  height: auto;
+  width: 100%;
+  max-width: calc(var(--theme__sizes__page--width) - 480px);
+}
+
+section.text-and-photo.text-left > article.text-and-photo--text
+{
+  order: 1;
+}
+
+section.text-and-photo.text-left > article.text-and-photo--text::before
+{
+  right: -350px;
+  left: unset;
+}
+
+section.text-and-photo.text-left > article.text-and-photo--text::after
+{
+  left: unset;
+  right: -50px;
+}
+
+section.text-and-photo.text-left > img.text-and-photo--photo
+{
+  order: 2;
+}
