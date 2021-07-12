@@ -5,10 +5,13 @@
 
 .cta-tile-icon
 {
+  display: inline-flex;
+  flex-wrap: wrap;
   border-top: 2px solid #F1F1F1;
   flex-basis: 277.5px;
   box-sizing: border-box;
   padding: 20px 20px 20px 20px;
+  min-height: 250px;
   background: #FFFFFF;
   box-shadow: var(--theme__styling__box-shadow);
 }
@@ -40,5 +43,6 @@
 
 .cta-tile-icon .button__wrapper
 {
+  align-self: flex-end;
   transform: translateX(-20px);
 }
