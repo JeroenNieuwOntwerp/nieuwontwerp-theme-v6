@@ -18,7 +18,7 @@ if( $_options__content_type == 'custom' )
     $_tile_textcolour = get_sub_field('textcolour');
     $_tile_content = get_sub_field('content');
     $_tile_image = get_sub_field_object('image');
-    $_tile = 'layouts/_'.$_options__layout.'.php';
+    $_tile = 'layouts/'.$_options__layout.'/_'.$_options__layout.'.php';
     include($_tile);
   }
 } elseif( $_options__content_type == 'post-object' )

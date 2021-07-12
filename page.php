@@ -1,8 +1,9 @@
 <?php
 get_header();
-include_once('templates/headers/header-sub/_header-sub.php');
 //
 include_once('templates/nav/_nav.php');
+//
+include_once('templates/headers/header-sub/_header-sub.php');
 //
 echo '<main>';
 while( have_rows('flex-content') ): the_row();

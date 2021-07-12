@@ -1,8 +1,9 @@
 <?php
 get_header();
-include_once('templates/header/_header.php');
 //
 include_once('templates/nav/_nav.php');
+//
+include_once('templates/header/_header.php');
 //
 echo '<main>
   <h1 class="no-title title-error-404">404</h1>
