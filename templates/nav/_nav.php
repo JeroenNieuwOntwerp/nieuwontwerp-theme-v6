@@ -33,5 +33,9 @@ $_mainmenu_options = array(
 
 wp_nav_menu($_mainmenu_options);
 
-echo '<div class="search__panel">search...</div></nav>';
+echo '<div class="search__panel">
+    <input type="text" name="keyword" id="keyword" onkeyup="fetch()" placeholder="Search..."></input>
+    <img src="' __DIR__ .'/../../assets/img/search-white.svg" alt="Search" height="24px" width="24px" />
+  </div>
+</nav>';
 ?>
