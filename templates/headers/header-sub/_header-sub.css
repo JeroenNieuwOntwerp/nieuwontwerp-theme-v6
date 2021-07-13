@@ -138,5 +138,5 @@ header > div.introduction__wrapper > span > p
 
 header > div.introduction__wrapper .button__wrapper
 {
-  margin-left: 15px;
+  margin: 20px 0 0 15px;
 }
