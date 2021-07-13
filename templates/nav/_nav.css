@@ -41,7 +41,7 @@ nav.nav--bars--lower div.search__panel input
   background-color: transparent !important;
   color: white;
   border: none;
-  padding: 0.75em;
+  padding: 0.5em 20px;
   font-size: 0.75em;
   line-height: 1em;
   outline: none;
@@ -51,7 +51,7 @@ nav.nav--bars--lower div.search__panel input
   border-radius: 0px;
 }
 
-nav.nav--bars--lower div.search__panel input:placeholder
+nav.nav--bars--lower div.search__panel input::placeholder
 {
   color: white;
 }
