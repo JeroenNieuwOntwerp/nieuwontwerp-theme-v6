@@ -13,6 +13,7 @@ function no_ajax_search_fetch()
           type: 'post',
           data: { action: 'no_ajax_search_results_fetch', keyword: jQuery('#keyword').val() },
           success: function(data) {
+              jQuery('.search--menu--results').addClass('open');
               jQuery('.search--menu--results').html( data );
           }
       });
