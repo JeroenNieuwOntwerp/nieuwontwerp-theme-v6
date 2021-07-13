@@ -158,7 +158,7 @@ function no_customposttypes() {
 
   register_taxonomy(
 		'product-type',
-		'product',
+		'products',
 		array
 		(
 			"hierarchical" => true,
