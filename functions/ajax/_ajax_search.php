@@ -5,20 +5,10 @@ add_action('wp_ajax_no_ajax_search_results_fetch' , 'no_ajax_search_results_fetc
 add_action('wp_ajax_nopriv_no_ajax_search_results_fetch','no_ajax_search_results_fetch');
 
 function no_ajax_search_fetch($source)
-{
-  if($source == 'bar')
-  { ?>
-    <script>
-      jQuery('#keyword.fullscreen').val(jQuery('#keyword.bar'));
-    </script>
-  <?php } elseif($source == 'fullscreen')
-  { ?>
-    <script>
-      jQuery('#keyword.bar').val(jQuery('#keyword.fullscreen'));
-    </script>
-  <?php }
-  ?>
-  <script type="text/javascript">
+{ ?>
+  <script>
+  jQuery('#keyword.fullscreen').val(jQuery('#keyword.bar'));
+  jQuery('#keyword.bar').val(jQuery('#keyword.fullscreen'));
   function no_search_fetch(){
       jQuery.ajax({
           url: '<?php echo admin_url('admin-ajax.php'); ?>',
@@ -54,7 +44,7 @@ function no_ajax_search_results_fetch()
           <span class="material-icons">close</span>
         </p>
         <div class="search--menu--screen">
-          <h3 class="search--menu--screen--title">Search results for: <input type="text" name="keyword" id="keyword" class="fullscreen" onkeyup="no_search_fetch(fullscreen)" value="'. $_POST['keyword'] .'"></input></h3>
+          <h3 class="search--menu--screen--title">Search results for: <input type="text" name="keyword" id="keyword" class="fullscreen" onkeyup="no_search_fetch()" value="'. $_POST['keyword'] .'"></input></h3>
         <ul>';
         while( $_search_query->have_posts() ): $_search_query->the_post();
           echo '<li><a href="' . esc_url( post_permalink() ) . '">' . get_the_title() . '</a></li>';
