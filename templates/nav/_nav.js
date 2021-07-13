@@ -1,12 +1,6 @@
-jQuery(document).ready(function(){
-  jQuery('.search--menu--close--wrapper').click(function(){
-    toggleSearchResults();
-    jQuery(this).toggleClass('is--clicked');
+$(document).ready(function(){
+  $(document).on('click', '.search--menu--close--wrapper', function()
+  {
+    jQuery('.search--menu--results').toggleClass('is--open');
   });
 });
-
-
-function toggleSearchResults()
-{
-  jQuery('.search--menu--results').toggleClass('is--open');
-}

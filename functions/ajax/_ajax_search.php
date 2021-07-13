@@ -25,7 +25,7 @@ function no_ajax_search_results_fetch()
   if($_POST['keyword'] != ''){
     ?>
     <script>
-      toggleSearchResults();
+      jQuery('.search--menu--results').addClass('is--open');
     </script>
     <?php
       $_search_query = new WP_Query(
@@ -55,7 +55,7 @@ function no_ajax_search_results_fetch()
   } else {
     ?>
     <script>
-      toggleSearchResults();
+      jQuery('.search--menu--results').removeClass('is--open');
     </script>
     <?php
   }
