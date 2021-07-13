@@ -96,3 +96,31 @@ nav.nav--bars--lower div.search__panel img
   opacity: 1;
   pointer-events: initial;
 }
+
+.search--menu--results > p.search--menu--close--wrapper
+{
+  display: block;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  right: 50px;
+  top: 50px;
+}
+
+.search--menu--results > .search--menu--screen
+{
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  padding: 25px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.search--menu--results > .search--menu--screen > ul
+{
+  height: 100%;
+  max-height: 80vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
