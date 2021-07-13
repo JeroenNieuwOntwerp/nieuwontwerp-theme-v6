@@ -41,6 +41,7 @@ nav.nav--bars--lower div.search__panel input
   background-color: transparent !important;
   color: white;
   border: none;
+  padding: 0.75em;
   outline: none;
   letter-spacing: 0.92px;
   border-radius: 0px;
