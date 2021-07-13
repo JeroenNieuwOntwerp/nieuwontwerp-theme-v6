@@ -44,6 +44,8 @@ nav.nav--bars--lower div.search__panel input
   padding: 0.75em;
   outline: none;
   letter-spacing: 0.92px;
+  font-weight: 700;
+  text-transform: uppercase;
   border-radius: 0px;
 }
 
