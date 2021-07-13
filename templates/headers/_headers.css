@@ -74,6 +74,18 @@ header > div.introduction__wrapper > span > h5
   animation-fill-mode: forwards;
 }
 
+header > div.introduction__wrapper > span > p
+{
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  opacity: 0;
+  transform: translateY(25px);
+  animation-name: headerAnimH5Fade;
+  animation-duration: 500ms;
+  animation-delay: 250ms;
+  animation-fill-mode: forwards;
+}
+
 @keyframes headerAnimH5Fade
 {
   0%
@@ -89,14 +101,28 @@ header > div.introduction__wrapper > span > h5
   }
 }
 
-
-header > div.introduction__wrapper > span > p
-{
-  margin-block-start: 0px;
-  margin-block-end: 0px;
-}
-
 header > div.introduction__wrapper .button__wrapper
 {
   margin: 20px 0 0 15px;
+  animation-name: headerAnimButtonFade;
+  animation-duration: 250ms;
+  animation-delay: 750ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  transform: translateX(-100px);
+}
+
+@keyframes headerAnimButtonFade
+{
+  0%
+  {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  100%
+  {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
