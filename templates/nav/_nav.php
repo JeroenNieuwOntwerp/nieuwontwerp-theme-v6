@@ -35,7 +35,7 @@ wp_nav_menu($_mainmenu_options);
 
 echo '<div class="search__panel">
     <input type="text" name="keyword" id="keyword" onkeyup="fetch()" placeholder="Search..."></input>
-    <img src="'. get_template_directory_uri() .'/../../assets/img/search-white.svg" alt="Search" height="24px" width="24px" />
+    <img src="'. get_template_directory_uri() .'/assets/img/search-white.svg" alt="Search" height="24px" width="24px" />
   </div>
 </nav>';
 ?>
