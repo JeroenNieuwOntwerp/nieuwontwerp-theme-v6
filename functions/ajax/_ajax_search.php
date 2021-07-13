@@ -4,7 +4,7 @@ add_action('wp_footer', 'no_ajax_search_fetch' );
 add_action('wp_ajax_no_ajax_search_results_fetch' , 'no_ajax_search_results_fetch');
 add_action('wp_ajax_nopriv_no_ajax_search_results_fetch','no_ajax_search_results_fetch');
 
-function no_ajax_search_fetch($source)
+function no_ajax_search_fetch()
 { ?>
   <script>
   jQuery('#keyword.fullscreen').val(jQuery('#keyword.bar'));
