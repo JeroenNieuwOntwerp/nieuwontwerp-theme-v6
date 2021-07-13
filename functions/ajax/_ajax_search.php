@@ -13,10 +13,6 @@ function no_ajax_search_fetch()
           type: 'post',
           data: { action: 'no_ajax_search_results_fetch', keyword: jQuery('#keyword').val() },
           success: function(data) {
-              if(data != '')
-              {
-                jQuery('.search--menu--results').addClass('open');
-              };
               jQuery('.search--menu--results').html( data );
           }
       });
@@ -27,6 +23,11 @@ function no_ajax_search_fetch()
 function no_ajax_search_results_fetch()
 {
   if($_POST['keyword'] != ''){
+    ?>
+    <script>
+      jQuery('.search--menu--results').addClass('open');
+    </script>
+    <?php
       $_search_query = new WP_Query(
         array(
           'posts_per_page' => -1,
@@ -52,7 +53,11 @@ function no_ajax_search_results_fetch()
       echo '<div class="search--menu--screen"><ul><li>No results</li></ul></div>';
   	}
   } else {
-
+    ?>
+    <script>
+      jQuery('.search--menu--results').removeClass('open');
+    </script>
+    <?php
   }
   die();
 }
