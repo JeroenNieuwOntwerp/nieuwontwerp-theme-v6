@@ -37,7 +37,9 @@ function no_ajax_search_results_fetch()
         echo '<p class="search--menu--close--wrapper">
           <span class="material-icons">close</span>
         </p>
-        <div class="search--menu--screen"><ul>';
+        <div class="search--menu--screen">
+          <h4 class="search--menu--screen--title">Search results for: '. $_POST['keyword'] .'</h4>
+        <ul>';
         while( $_search_query->have_posts() ): $_search_query->the_post();
           echo '<li><a href="' . esc_url( post_permalink() ) . '">' . get_the_title() . '</a></li>';
         endwhile;
