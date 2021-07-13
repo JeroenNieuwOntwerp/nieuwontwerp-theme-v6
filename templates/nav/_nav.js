@@ -6,6 +6,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $('.search--menu--close--wrapper').click(function(){
+    console.log('testing the close button');
     $('.search--menu--results').toggleClass('is--open');
   });
 });
