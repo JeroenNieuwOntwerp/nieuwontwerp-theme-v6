@@ -156,6 +156,25 @@ function no_customposttypes() {
 		)
 	);
 
+  register_taxonomy(
+		'product-type',
+		'product',
+		array
+		(
+			"hierarchical" => true,
+			"label" => "Product Type",
+			"singular_label" => "Related product ",
+			'update_count_callback' => '_update_post_term_count',
+			'query_var' => true,
+			'rewrite' => array( 'slug' => 'related-products ', 'with_front' => false ),
+			'public' => true,
+			'show_ui' => true,
+			'show_tagcloud' => true,
+			'_builtin' => false,
+			'show_in_nav_menus' => true
+		)
+	);
+
 };
 
 ?>
