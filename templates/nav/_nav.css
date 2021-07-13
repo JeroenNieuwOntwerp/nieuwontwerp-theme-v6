@@ -30,8 +30,8 @@ nav.nav--bars--lower ul,
 nav.nav--bars--lower ul li,
 nav.nav--bars--lower ul li a
 {
-  height: 100%;
-  max-height: var(--nav__lower__max-height);
+  height: 100% !important;
+  max-height: var(--nav__lower__max-height) !important;
 }
 
 nav.nav--bars--lower div.search__panel
