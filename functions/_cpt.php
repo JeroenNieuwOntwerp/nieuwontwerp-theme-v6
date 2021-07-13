@@ -157,16 +157,16 @@ function no_customposttypes() {
 	);
 
   register_taxonomy(
-		'product-type',
+		'product-family',
 		'products',
 		array
 		(
 			"hierarchical" => true,
-			"label" => "Product Type",
-			"singular_label" => "Related product ",
+			"label" => "Product Family",
+			"singular_label" => "Product Family ",
 			'update_count_callback' => '_update_post_term_count',
 			'query_var' => true,
-			'rewrite' => array( 'slug' => 'related-products ', 'with_front' => false ),
+			'rewrite' => array( 'slug' => 'product-family', 'with_front' => false ),
 			'public' => true,
 			'show_ui' => true,
 			'show_tagcloud' => true,
