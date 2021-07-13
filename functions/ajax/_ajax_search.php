@@ -33,7 +33,10 @@ function no_ajax_search_results_fetch()
       );
       if( $_search_query->have_posts() )
       {
-        echo '<div class="search--menu--screen"><ul>';
+        echo '<p class="search--menu--close--wrapper">
+          <span class="material-icons">close</span>
+        </p>
+        <div class="search--menu--screen"><ul>';
         while( $_search_query->have_posts() ): $_search_query->the_post();
           echo '<li><a href="' . esc_url( post_permalink() ) . '">' . get_the_title() . '</a></li>';
         endwhile;
