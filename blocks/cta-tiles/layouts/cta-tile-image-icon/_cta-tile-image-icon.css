@@ -1,0 +1,62 @@
+:root
+{
+
+}
+
+.cta-tile-image-icon
+{
+  flex-basis: 380px;
+  display: grid;
+  grid-template-rows: 3fr 2fr;
+  box-sizing: border-box;
+  box-shadow: var(--theme__styling__box-shadow);
+}
+
+.cta-tile-image-icon,
+.cta-tile-image-icon:hover,
+.cta-tile-image-icon:active,
+.cta-tile-image-icon:visited
+{
+  text-decoration: none;
+}
+
+.cta-tile-image-icon > div.cta-tile--image-wrapper
+{
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-tile-image-icon img.cta-tile--image
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+  transition: all 250ms ease-in-out;
+}
+
+.cta-tile-image-icon:hover  img.cta-tile--image
+{
+    transform: scale(1.0675);
+}
+
+.cta-tile-image-icon > span.cta-tile--content
+{
+  display: block;
+  padding: 30px 20px;
+}
+
+.cta-tile-image-icon > span.cta-tile--content h3
+{
+  font-size: 1.375rem;
+  line-height: 2em;
+  font-weight: 700;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+.cta-tile-image-icon .button__wrapper
+{
+  transform: translateX(-20px);
+}
