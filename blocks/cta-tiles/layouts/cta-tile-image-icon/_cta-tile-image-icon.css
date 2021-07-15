@@ -52,6 +52,23 @@
   bottom: 133px;
 }
 
+.cta-tile-image-icon span.cta-tile--icon > i
+{
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.cta-tile-image-icon span.cta-tile--icon > i > img
+{
+  height: 100%;
+  width: 100%;
+  object-fit: scale-down;
+  object-position: center;
+}
+
 .cta-tile-image-icon > span.cta-tile--content
 {
   display: block;
