@@ -1,0 +1,81 @@
+:root
+{
+
+}
+
+.slider-slide-background
+{
+  flex-basis: 277.5px;
+  box-sizing: border-box;
+  height: 410px;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+}
+
+.slider-slide-background,
+.slider-slide-background:hover,
+.slider-slide-background:active,
+.slider-slide-background:visited
+{
+  text-decoration: none;
+}
+
+.slider-slide-background > img.slider-slide--image
+{
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  transform: scale(1);
+  object-fit: cover;
+  object-position: right;
+  transition: all 250ms ease-in-out;
+}
+
+.slider-slide-background:hover > img.slider-slide--image
+{
+    transform: scale(1.125);
+}
+
+.slider-slide-background > div.slider-slide--overlay
+{
+  display: block;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+
+
+.slider-slide-background > span.slider-slide--content
+{
+  display: block;
+  position: relative;
+  z-index: 3;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+  align-self: flex-end;
+}
+
+.slider-slide-background > span.slider-slide--content h3
+{
+  font-size: 1.375rem;
+  line-height: 2em;
+  font-weight: 700;
+}
+
+.slider-slide-background .button__wrapper
+{
+  transform: translateX(-20px);
+}
