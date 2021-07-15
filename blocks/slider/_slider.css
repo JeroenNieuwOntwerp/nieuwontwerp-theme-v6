@@ -6,8 +6,14 @@
 section.slider
 {
   width: 100%;
+  box-sizing: border-box;
   max-width: 100vw;
   overflow-x: hidden;
   overflow-y: auto;
   padding: 0 0 0 calc(calc(100% - var(--theme__sizes__page--width)) / 2);
+}
+
+section.slider .slick-slide
+{
+  padding: 0 15px;
 }
