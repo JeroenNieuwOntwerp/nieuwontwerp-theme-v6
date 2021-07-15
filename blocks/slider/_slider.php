@@ -17,10 +17,10 @@ echo '<section class="slider slider-layout-' . $_options__layout . '" style="mar
  while( have_rows('slider--repeater') )
  {
    the_row();
-   $_slide_label = get_sub_field('label');
-   $_slide_url = get_sub_field('url');
-   $_slide_textcolour = get_sub_field('textcolour');
-   $_slide_image = get_sub_field_object('image');
+   $_slide_label = get_sub_field('slide--label');
+   $_slide_url = get_sub_field('slide--url');
+   $_slide_textcolour = get_sub_field('slide--textcolour');
+   $_slide_image = get_sub_field_object('slide--image');
    $_slide = 'layouts/'.$_options__layout.'/_'.$_options__layout.'.php';
    include($_slide);
  }
