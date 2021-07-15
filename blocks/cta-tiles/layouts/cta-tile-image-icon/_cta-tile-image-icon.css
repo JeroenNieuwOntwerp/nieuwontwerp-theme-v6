@@ -41,6 +41,16 @@
     transform: scale(1.0675);
 }
 
+.cta-tile-image-icon span.cta-tile--icon
+{
+  display: table;
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  right: 0;
+  bottom: 133px;
+}
+
 .cta-tile-image-icon > span.cta-tile--content
 {
   display: block;

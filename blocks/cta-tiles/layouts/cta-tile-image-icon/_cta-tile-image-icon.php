@@ -12,7 +12,7 @@ echo '<a href="'. $_tile_url .'" rel="noopener nofollow noreferrer" class="cta-t
   <div class="cta-tile--image-wrapper">
     <img class="cta-tile--image image-id-'. $_tile_image["ID"] .'" src="' . $_tile_image["value"]["url"] . '" alt="'. $_tile_image["value"]["alt"] . '" />
   </div>
-  <span class="cta-tile--icon" style="background-color: #'. get_sub_field('icon--background') .' !important"/></span>
+  <span class="cta-tile--icon" style="background-color: '. get_sub_field('icon--background') .' !important"/></span>
   <span class="cta-tile--content" style="color: '. $_tile_textcolour .' !important;">
     <h3 class="cta-tile--title">'. $_tile_content .'</h3>';
     include(__DIR__ . '/../../../../templates/components/button/_button.php' );
