@@ -26,5 +26,5 @@ section.slider .slick-slide
 
 section.slider .slick-slide.slick-active
 {
-  width: 308px;
+  width: 308px !important;
 }
