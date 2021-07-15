@@ -3,7 +3,7 @@ defined( 'ABSPATH' ) || exit;
 
 $_button_options__ID = get_the_ID($post);
 $_button_options__style = 'transparent';
-$_button_options__text_colour = $_tile_textcolour;
+$_button_options__text_colour = $_slide_textcolour;
 $_button_options__url = $_slide_url;
 $_button_options__label = $_slide_label;
 $_button_pseudo = 'true';
