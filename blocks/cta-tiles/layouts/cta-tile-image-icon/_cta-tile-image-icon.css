@@ -57,6 +57,8 @@
   right: 0;
   height: 80px;
   width: 80px;
+  background-size: 450%;
+  transform: rotateY(180deg);
   background-image: url('../../../../assets/img/strokes-gray.svg');
 }
 
