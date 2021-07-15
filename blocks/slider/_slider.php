@@ -32,7 +32,7 @@ echo '<section class="slider slider-layout-' . $_options__layout . '" style="mar
  {
    include(__DIR__ . '/../../templates/components/button/_button.php' );
  };
-echo '</section>
+echo '
 <script>
   $(document).ready(function()
   {
@@ -41,5 +41,5 @@ echo '</section>
 
     };
   });
-</script>';
+</script></section>';
 ?>
