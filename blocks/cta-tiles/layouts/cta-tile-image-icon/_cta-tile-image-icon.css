@@ -44,7 +44,20 @@
 .cta-tile-image-icon > span.cta-tile--content
 {
   display: block;
+  position: relative;
   padding: 30px 20px;
+}
+
+.cta-tile-image-icon > span.cta-tile--content::after
+{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 80px;
+  width: 80px;
+  background-image: url('../../../assets/img/strokes-gray.svg');
 }
 
 .cta-tile-image-icon > span.cta-tile--content h3
