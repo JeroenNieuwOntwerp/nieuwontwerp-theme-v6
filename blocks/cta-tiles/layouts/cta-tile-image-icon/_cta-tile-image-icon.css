@@ -57,7 +57,7 @@
   right: 0;
   height: 80px;
   width: 80px;
-  background-image: url('../../../assets/img/strokes-gray.svg');
+  background-image: url('../../../../assets/img/strokes-gray.svg');
 }
 
 .cta-tile-image-icon > span.cta-tile--content h3
