@@ -32,5 +32,14 @@ echo '<section class="slider slider-layout-' . $_options__layout . '" style="mar
  {
    include(__DIR__ . '/../../templates/components/button/_button.php' );
  };
-echo '</section>';
+echo '</section>
+<script>
+  $(document).ready(function()
+  {
+    $(".slider-id-'. $_slider_id .'").slick()
+    {
+
+    };
+  });
+</script>';
 ?>
