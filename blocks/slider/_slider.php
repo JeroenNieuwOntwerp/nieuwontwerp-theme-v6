@@ -12,7 +12,7 @@ $_button_options__label = get_sub_field('button-label');
 $_button_options__external = get_sub_field('external-link');
 $_button_pseudo = 'false';
 
-echo '<section class="slider slider-layout-"' . $_options__layout . '" style="margin-top: '. $_options__margin_top .'px !important; margin-bottom: '. $_options__margin_bottom .'px !important;">
+echo '<section class="slider slider-layout-' . $_options__layout . '" style="margin-top: '. $_options__margin_top .'px !important; margin-bottom: '. $_options__margin_bottom .'px !important;">
  <div class="slider__wrapper slider-id-'. $_slider_id .'">';
  while( have_rows('slider--repeater') )
  {
