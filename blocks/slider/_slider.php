@@ -17,6 +17,7 @@ echo '<section class="slider slider-layout-' . $_options__layout . '" style="mar
  while( have_rows('slider--repeater') )
  {
    the_row();
+   $_slide_title = get_sub_field('slide--title');
    $_slide_label = get_sub_field('slide--label');
    $_slide_url = get_sub_field('slide--url');
    $_slide_textcolour = get_sub_field('slide--textcolour');
