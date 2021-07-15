@@ -28,3 +28,8 @@ section.slider .slick-slide.slick-active
 {
   width: 308px !important;
 }
+
+section.slider .slider-slide-background
+{
+  display: flex !important;
+}
