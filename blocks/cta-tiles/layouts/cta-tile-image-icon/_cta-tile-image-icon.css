@@ -7,7 +7,8 @@
 {
   flex-basis: 380px;
   display: grid;
-  grid-template-rows: 3fr 2fr;
+  grid-template-rows: 2fr 1fr;
+  position: relative;
   box-sizing: border-box;
   box-shadow: var(--theme__styling__box-shadow);
 }
