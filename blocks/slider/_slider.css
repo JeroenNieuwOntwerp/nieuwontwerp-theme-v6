@@ -1,0 +1,10 @@
+:root
+{
+
+}
+
+section.slider
+{
+  width: 100%;
+  padding: 0 0 0 calc(calc(100% - var(--theme__sizes__page--width)) / 2);
+}
