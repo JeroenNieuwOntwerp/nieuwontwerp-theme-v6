@@ -44,6 +44,9 @@ section.tabs > .tabs--text
 {
   flex-basis: 450px;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 section.tabs > .tabs--text::before
@@ -75,6 +78,8 @@ section.tabs > .tabs--text::after
 section.tabs > .tabs--text > span.tabs--text--row
 {
   display: block;
+  flex-basis: 135px;
+  box-sizing: border-box;
   padding: 20px 25px 20px 65px;
   border-left: 6px solid #DDDCDD;
 }
