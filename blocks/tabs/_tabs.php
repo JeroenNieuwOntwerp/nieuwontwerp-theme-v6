@@ -36,7 +36,7 @@ while(have_rows('tabs--repeater'))
   {
       echo '<span class="tabs--text--row tab-id-'. $_tab_id .'"><h3 class="tab-title">'. get_sub_field('tabs--row--title') .'</h3>';
   }
-  echo '<p class="tab-content">'. get_sub_field('tabs--row--content') .'</p></span>';
+  echo '<div class="tab-content">'. get_sub_field('tabs--row--content') .'</div></span>';
   $_int++;
 };
 echo '</article></section>';

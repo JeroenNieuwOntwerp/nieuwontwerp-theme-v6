@@ -110,7 +110,7 @@ section.tabs > .tabs--text > span.tabs--text--row h3::before
   transform: rotate(180deg);
 }
 
-section.tabs > .tabs--text > span.tabs--text--row p
+section.tabs > .tabs--text > span.tabs--text--row div.tab-content
 {
   opacity: 0;
   position: absolute;
@@ -137,7 +137,7 @@ section.tabs > .tabs--text > span.tabs--text--row.is-active h3::before
 }
 
 
-section.tabs > .tabs--text > span.tabs--text--row.is-active p
+section.tabs > .tabs--text > span.tabs--text--row.is-active div.tab-content
 {
   opacity: 1;
   transform: translateY(0px);
