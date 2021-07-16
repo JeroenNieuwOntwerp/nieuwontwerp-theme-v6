@@ -93,14 +93,15 @@ section.tabs > .tabs--text > span.tabs--text--row h3::before
   content: '';
   display: block;
   position: absolute;
-  top: 0;
-  left: -12px;
+  top: 3;
+  left: -36px;
   background-image: url('../../assets/img/chevron-black.svg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   height: 24px;
   width: 24px;
+  transform: rotate(180deg);
 }
 
 section.tabs > .tabs--text > span.tabs--text--row p
