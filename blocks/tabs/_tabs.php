@@ -48,17 +48,10 @@ while(have_rows('tabs--repeater'))
     $(document).ready(function()
     {
       $(".tabs--text--row.tab-id-'. $_tab_id .' .tab-title").click(function(){
-        if($(this).parent().hasClass("is-active"))
-        {
-          $(".tab-image").removeClass("is-active");
-          $(".tabs--text--row").removeClass("is-active");
-        } else
-        {
           $(".tab-image").removeClass("is-active");
           $(".tabs--text--row").removeClass("is-active");
           $(".tab-image.tab-id-'. $_tab_id .'").addClass("is-active");
           $(".tabs--text--row.tab-id-'. $_tab_id .'").addClass("is-active");
-        }
       });
     });
   </script>';
