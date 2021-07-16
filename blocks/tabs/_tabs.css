@@ -115,8 +115,8 @@ section.tabs > .tabs--text > span.tabs--text--row p
   opacity: 0;
   position: absolute;
   bottom: 0;
-  left: 0;
-  right: 0;
+  left: 65px;
+  right: 25px;
   transform: translateY(50px);
   transition: all 300ms ease-in-out;
 }
