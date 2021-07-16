@@ -1,6 +1,7 @@
 <?php
 defined( 'ABSPATH' ) || exit;
 
+$_row_id = get_row_index();
 $_options__layout = get_sub_field('options--layout');
 $_options__content_type = get_sub_field('options--content-type');
 $_tile_overlaycolour = get_sub_field('overlaycolour');

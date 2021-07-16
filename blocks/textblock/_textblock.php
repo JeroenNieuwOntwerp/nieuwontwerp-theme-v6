@@ -2,6 +2,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
+$_row_id = get_row_index();
 $_content = get_sub_field_object('textblock--content');
 $_options_bold = get_sub_field('textblock--bold');
 $_options_border = get_sub_field('textblock--border');

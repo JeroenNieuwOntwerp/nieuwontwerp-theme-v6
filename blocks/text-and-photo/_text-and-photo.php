@@ -2,6 +2,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
+$_row_id = get_row_index();
 $_options__image = get_sub_field_object('image');
 $_options__text_position = get_sub_field('options--text-position');
 $_options__text_colour = get_sub_field('options--text-colour');

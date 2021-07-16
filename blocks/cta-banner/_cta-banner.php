@@ -1,5 +1,6 @@
 <?php
 defined( 'ABSPATH' ) || exit;
+$_row_id = get_row_index();
 $_options_image = get_sub_field_object('image');
 $_options_overlay_colour = get_sub_field('background-colour');
 $_options_text_colour = get_sub_field('text-colour');

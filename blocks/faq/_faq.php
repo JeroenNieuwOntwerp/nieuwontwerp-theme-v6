@@ -1,11 +1,12 @@
 <?php
 defined( 'ABSPATH' ) || exit;
 
+$_row_id = get_row_index();
 $_faq_repeater = get_sub_field_object('faq--repeater')["ID"];
 $_options__margin_top = get_sub_field('margin-top');
 $_options__margin_bottom = get_sub_field('margin-bottom');
 
-echo '<section class="faq faq-id-'. $_faq_repeater .'" style="margin-top: '. $_options__margin_top .'px !important; margin-bottom: '. $_options__margin_bottom .'px !important;">';
+echo '<section class="faq faq-id-'. $_row_id .'" style="margin-top: '. $_options__margin_top .'px !important; margin-bottom: '. $_options__margin_bottom .'px !important;">';
   while( have_rows('faq--repeater'))
   {
     the_row();

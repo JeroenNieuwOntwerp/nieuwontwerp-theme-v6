@@ -2,6 +2,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
+$_row_id = get_row_index();
 $_image = get_sub_field_object('image');
 $_options_leadingdimensions = get_sub_field('leading-dimension');
 $_options_maxwidth = get_sub_field('max-width');
