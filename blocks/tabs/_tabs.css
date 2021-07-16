@@ -16,15 +16,24 @@ section.tabs
 
 section.tabs > .tabs--images
 {
+  position: relative;
   flex-basis: 615px;
 }
 
 section.tabs > .tabs--images > img
 {
+  display: block;
+  position: absolute;
+  opacity: 0;
   height: 100%;
   width: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+section.tabs > .tabs--images > img.is-active
+{
+  opacity: 1;
 }
 
 section.tabs > .tabs--text
@@ -50,7 +59,7 @@ section.tabs > .tabs--text > span.tabs--text--row h3
 section.tabs > .tabs--text > span.tabs--text--row p
 {
   opacity: 0;
-  transform: translateY(100px);
+  transform: translateY(50px);
   transition: all 300ms ease-in-out;
 }
 
