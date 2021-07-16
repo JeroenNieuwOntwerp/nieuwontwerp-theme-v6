@@ -38,3 +38,8 @@ section.tabs > .tabs--text > span.tabs--text--row
   padding: 20px 25px 20px 65px;
   border-left: 6px solid #DDDCDD;
 }
+
+section.tabs > .tabs--text > span.tabs--text--row.is-active
+{
+  border-left: 6px solid #DD1742;
+}

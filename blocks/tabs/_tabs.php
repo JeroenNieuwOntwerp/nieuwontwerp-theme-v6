@@ -19,8 +19,8 @@ while(have_rows('tabs--repeater'))
 {
   the_row();
   $_tab_id = get_row_index();
-  echo '<span class="tabs--text--row"><h3 class="tab-title tab-id-'. $_tab_id .'">'. get_sub_field('tabs--row--title') .'</h3>';
-  echo '<p class="tab-content tab-id-'. $_tab_id .'">'. get_sub_field('tabs--row--content') .'</p></span>';
+  echo '<span class="tabs--text--row tab-id-'. $_tab_id .'"><h3 class="tab-title">'. get_sub_field('tabs--row--title') .'</h3>';
+  echo '<p class="tab-content">'. get_sub_field('tabs--row--content') .'</p></span>';
 };
 echo '</article></section>';
 while(have_rows('tabs--repeater'))
@@ -30,17 +30,17 @@ while(have_rows('tabs--repeater'))
   echo'<script>
     $(document).ready(function()
     {
-      $(".tab-title.tab-id-'. $_tab_id .'").click(function(){
+      $(".tabs--text--row.tab-id-'. $_tab_id .'").click(function(){
         if($(this).hasClass("is-active"))
         {
           $(".tab-image").removeClass("is-active");
-          $(".tab-content").removeClass("is-active");
+          $(".tabs--text--row").removeClass("is-active");
         } else
         {
           $(".tab-image").removeClass("is-active");
-          $(".tab-content").removeClass("is-active");
+          $(".tabs--text--row").removeClass("is-active");
           $(".tab-image.tab-id-'. $_tab_id .'").addClass("is-active");
-          $(".tab-content.tab-id-'. $_tab_id .'").addClass("is-active");
+          $(".tabs--text--row.tab-id-'. $_tab_id .'").addClass("is-active");
         }
       });
     });
