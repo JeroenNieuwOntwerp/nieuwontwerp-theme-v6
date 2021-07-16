@@ -64,7 +64,7 @@ section.tabs > .tabs--text > span.tabs--text--row.is-active > h3
   color: #DD1742;
 }
 
-section.tabs > .tabs--text > span.tabs--text--row.active p
+section.tabs > .tabs--text > span.tabs--text--row.is-active p
 {
   opacity: 1;
   transform: translateY(0px);
