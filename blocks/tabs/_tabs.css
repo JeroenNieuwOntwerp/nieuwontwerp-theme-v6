@@ -57,11 +57,8 @@ section.tabs > .tabs--text::after
   background-size: 250%;
   display: block;
   content: '';
-  opacity: 0;
-  transform: rotateY(180deg) translateX(200px);
-  animation-name: pageLoadHeaderStripes;
-  animation-duration: 650ms;
-  animation-fill-mode: forwards;
+  opacity: 1;
+  transform: rotateY(180deg);
 }
 
 section.tabs > .tabs--text > span.tabs--text--row
