@@ -12,7 +12,15 @@ section.tabs
   margin: 0 auto;
 }
 
-section.tabs > img
+section.tabs > .tabs--images
 {
   flex-basis: 615px;
+}
+
+section.tabs > .tabs--images > img
+{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
 }

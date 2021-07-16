@@ -5,7 +5,8 @@ $_row_id = get_row_index();
 $_options__margin_top = get_sub_field('margin-top');
 $_options__margin_bottom = get_sub_field('margin-bottom');
 
-echo '<section class="tabs tabs-id-'. $_row_id .'">';
+echo '<section class="tabs tabs-id-'. $_row_id .'">
+<aside class="tabs--images">';
 while(have_rows('tabs--repeater'))
 {
   the_row();
@@ -13,7 +14,7 @@ while(have_rows('tabs--repeater'))
   $_image = get_sub_field_object('tabs--row--image');
   echo '<img class="tab-image tab-id-'. $_tab_id["ID"] .'" src="' . $_image["value"]["url"] . '" alt="'. $_image["value"]["alt"] . '" />';
 };
-echo '<article class="tabs--text">';
+echo '</aside><article class="tabs--text">';
 while(have_rows('tabs--repeater'))
 {
   the_row();
