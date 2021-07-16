@@ -12,7 +12,7 @@ while(have_rows('tabs--repeater'))
   the_row();
   $_tab_id = get_row_index();
   $_image = get_sub_field_object('tabs--row--image');
-  echo '<img class="tab-image tab-id-'. $_tab_id["ID"] .'" src="' . $_image["value"]["url"] . '" alt="'. $_image["value"]["alt"] . '" />';
+  echo '<img class="tab-image tab-id-'. $_tab_id .'" src="' . $_image["value"]["url"] . '" alt="'. $_image["value"]["alt"] . '" />';
 };
 echo '</aside><article class="tabs--text">';
 while(have_rows('tabs--repeater'))
@@ -31,6 +31,10 @@ while(have_rows('tabs--repeater'))
     $(document).ready(function()
     {
       $(".tab-title.tab-id-'. $_tab_id .'").click(function(){
+        $(".tab-image.tab-id-'. $_tab_id .'").toggleClass("is-active");
+        $(".tab-content.tab-id-'. $_tab_id .'").toggleClass("is-active");
+      });
+      $(".tab-title.tab-id-'. $_tab_id .'").hover(function(){
         $(".tab-image.tab-id-'. $_tab_id .'").toggleClass("is-active");
         $(".tab-content.tab-id-'. $_tab_id .'").toggleClass("is-active");
       });
