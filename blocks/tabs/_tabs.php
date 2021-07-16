@@ -25,6 +25,7 @@ while(have_rows('tabs--repeater'))
 echo '</article></section>';
 while(have_rows('tabs--repeater'))
 {
+  the_row();
   $_tab_id = get_row_index();
   echo'<script>
     $(document).ready(function()
@@ -34,5 +35,5 @@ while(have_rows('tabs--repeater'))
         $(".tab-content.tab-id-'. $_tab_id .'").toggleClass("is-active");
       });
     });
-  </script>';  
+  </script>';
 }
