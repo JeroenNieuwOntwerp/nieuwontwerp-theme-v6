@@ -46,7 +46,7 @@ section.tabs > .tabs--text
   position: relative;
 }
 
-section.tabs > .tabs--text::after
+section.tabs > .tabs--text::before
 {
   position: absolute;
   bottom: -50px;
@@ -61,11 +61,11 @@ section.tabs > .tabs--text::after
   transform: rotateY(180deg);
 }
 
-section.tabs > .tabs--text::before
+section.tabs > .tabs--text::after
 {
   position: absolute;
-  bottom: 0px;
-  left: 0px;
+  bottom: -50px;
+  left: -50px;
   height: 50px;
   width: 50px;
   background-color: #FFFFFF;
