@@ -44,6 +44,14 @@ section.tabs > .tabs--text > span.tabs--text--row h3
     font-size: 1.375rem;
     line-height: 1.2727em;
     font-weight: 700;
+    cursor: pointer;
+}
+
+section.tabs > .tabs--text > span.tabs--text--row p
+{
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 300ms ease-in-out;
 }
 
 section.tabs > .tabs--text > span.tabs--text--row.is-active
@@ -54,4 +62,10 @@ section.tabs > .tabs--text > span.tabs--text--row.is-active
 section.tabs > .tabs--text > span.tabs--text--row.is-active > h3
 {
   color: #DD1742;
+}
+
+section.tabs > .tabs--text > span.tabs--text--row.active p
+{
+  opacity: 1;
+  transform: translateY(0px);
 }
