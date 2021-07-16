@@ -53,7 +53,7 @@ section.tabs > .tabs--text::after
   left: -200px;
   height: 100px;
   width: 200px;
-  background-image: url('../../../assets/img/strokes-gray.svg');
+  background-image: url('../../assets/img/strokes-gray.svg');
   background-size: 250%;
   display: block;
   content: '';
@@ -61,6 +61,18 @@ section.tabs > .tabs--text::after
   transform: rotateY(180deg);
 }
 
+section.tabs > .tabs--text::before
+{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 50px;
+  width: 50px;
+  background-color: #FFFFFF;
+  display: block;
+  content: '';
+  opacity: 1;
+}
 section.tabs > .tabs--text > span.tabs--text--row
 {
   display: block;
