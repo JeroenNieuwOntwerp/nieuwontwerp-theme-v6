@@ -50,9 +50,9 @@ section.tabs > .tabs--text::before
 {
   position: absolute;
   bottom: -50px;
-  left: -200px;
+  left: -350px;
   height: 100px;
-  width: 200px;
+  width: 350px;
   background-image: url('../../assets/img/strokes-gray.svg');
   background-size: 250%;
   display: block;
