@@ -43,6 +43,25 @@ section.tabs > .tabs--images > img.is-active
 section.tabs > .tabs--text
 {
   flex-basis: 450px;
+  position: relative;
+}
+
+section.tabs > .tabs--text::after
+{
+  position: absolute;
+  bottom: -50px;
+  left: -200px;
+  height: 100px;
+  width: 200px;
+  background-image: url('../../../assets/img/strokes-white.svg');
+  background-size: 250%;
+  display: block;
+  content: '';
+  opacity: 0;
+  transform: rotateY(180deg) translateX(200px);
+  animation-name: pageLoadHeaderStripes;
+  animation-duration: 650ms;
+  animation-fill-mode: forwards;
 }
 
 section.tabs > .tabs--text > span.tabs--text--row
