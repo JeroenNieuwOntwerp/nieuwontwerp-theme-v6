@@ -5,7 +5,7 @@ $_row_id = get_row_index();
 $_options__margin_top = get_sub_field('margin-top');
 $_options__margin_bottom = get_sub_field('margin-bottom');
 
-echo '<section class="tabs tabs-id-'. $_row_id .'">
+echo '<section class="tabs tabs-id-'. $_row_id .'" style="margin-top: '. $_options__margin_top .'px !important; margin-bottom: '. $_options__margin_bottom .'px !important;">>
 <aside class="tabs--images">';
 while(have_rows('tabs--repeater'))
 {
