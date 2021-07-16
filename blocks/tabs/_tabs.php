@@ -27,4 +27,4 @@ echo '</article></section>
   {
 
   });
-</script>";
+</script>';
