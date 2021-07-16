@@ -20,7 +20,7 @@ while(have_rows('tabs--repeater'))
   the_row();
   $_tab_id = get_row_index();
   echo '<span class="tabs--text--row"><h3 class="tab-title tab-id-'. $_tab_id .'">'. get_sub_field('tabs--row--title') .'</h3>';
-  echo '<p class="tab-content tab-id-'. $_tab_id .'">'. get_sub_field('tabs--row--content') .'</p><span>';
+  echo '<p class="tab-content tab-id-'. $_tab_id .'">'. get_sub_field('tabs--row--content') .'</p></span>';
 };
 echo '</article></section>
 <script>
