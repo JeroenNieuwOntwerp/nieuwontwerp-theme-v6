@@ -31,12 +31,17 @@ while(have_rows('tabs--repeater'))
     $(document).ready(function()
     {
       $(".tab-title.tab-id-'. $_tab_id .'").click(function(){
-        $(".tab-image.tab-id-'. $_tab_id .'").toggleClass("is-active");
-        $(".tab-content.tab-id-'. $_tab_id .'").toggleClass("is-active");
-      });
-      $(".tab-title.tab-id-'. $_tab_id .'").hover(function(){
-        $(".tab-image.tab-id-'. $_tab_id .'").toggleClass("is-active");
-        $(".tab-content.tab-id-'. $_tab_id .'").toggleClass("is-active");
+        if($(this).hasClass("is-active"))
+        {
+          $(".tab-image").removeClass("is-active");
+          $(".tab-content").removeClass("is-active");
+        } else
+        {
+          $(".tab-image").removeClass("is-active");
+          $(".tab-content").removeClass("is-active");
+          $(".tab-image.tab-id-'. $_tab_id .'").addClass("is-active");
+          $(".tab-content.tab-id-'. $_tab_id .'").addClass("is-active");
+        }
       });
     });
   </script>';
