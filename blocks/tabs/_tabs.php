@@ -30,8 +30,8 @@ while(have_rows('tabs--repeater'))
   echo'<script>
     $(document).ready(function()
     {
-      $(".tabs--text--row.tab-id-'. $_tab_id .'").click(function(){
-        if($(this).hasClass("is-active"))
+      $(".tabs--text--row.tab-id-'. $_tab_id .' .tab-title").click(function(){
+        if($(this).parent().hasClass("is-active"))
         {
           $(".tab-image").removeClass("is-active");
           $(".tabs--text--row").removeClass("is-active");
