@@ -54,11 +54,10 @@ section.tabs > .tabs--text::before
   height: 100px;
   width: 350px;
   background-image: url('../../assets/img/strokes-gray.svg');
-  background-size: 250%;
+  background-size: 125%;
   display: block;
   content: '';
   opacity: 1;
-  transform: rotateY(180deg);
 }
 
 section.tabs > .tabs--text::after
