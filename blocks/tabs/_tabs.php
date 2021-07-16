@@ -7,20 +7,37 @@ $_options__margin_bottom = get_sub_field('margin-bottom');
 
 echo '<section class="tabs tabs-id-'. $_row_id .'" style="margin-top: '. $_options__margin_top .'px !important; margin-bottom: '. $_options__margin_bottom .'px !important;">
 <aside class="tabs--images">';
+$_int = 0;
 while(have_rows('tabs--repeater'))
 {
   the_row();
   $_tab_id = get_row_index();
   $_image = get_sub_field_object('tabs--row--image');
-  echo '<img class="tab-image tab-id-'. $_tab_id .'" src="' . $_image["value"]["url"] . '" alt="'. $_image["value"]["alt"] . '" />';
+  if($_int == 0)
+  {
+    echo '<img class="tab-image is-active tab-id-'. $_tab_id .'" src="' . $_image["value"]["url"] . '" alt="'. $_image["value"]["alt"] . '" />';
+  } else
+  {
+    echo '<img class="tab-image tab-id-'. $_tab_id .'" src="' . $_image["value"]["url"] . '" alt="'. $_image["value"]["alt"] . '" />';
+  }
+
+  $_int++;
 };
 echo '</aside><article class="tabs--text">';
+$_int = 0;
 while(have_rows('tabs--repeater'))
 {
   the_row();
   $_tab_id = get_row_index();
-  echo '<span class="tabs--text--row tab-id-'. $_tab_id .'"><h3 class="tab-title">'. get_sub_field('tabs--row--title') .'</h3>';
+  if($_int == 0)
+  {
+    echo '<span class="tabs--text--row is-active tab-id-'. $_tab_id .'"><h3 class="tab-title">'. get_sub_field('tabs--row--title') .'</h3>';
+  } else
+  {
+      echo '<span class="tabs--text--row tab-id-'. $_tab_id .'"><h3 class="tab-title">'. get_sub_field('tabs--row--title') .'</h3>';
+  }
   echo '<p class="tab-content">'. get_sub_field('tabs--row--content') .'</p></span>';
+  $_int++;
 };
 echo '</article></section>';
 while(have_rows('tabs--repeater'))
