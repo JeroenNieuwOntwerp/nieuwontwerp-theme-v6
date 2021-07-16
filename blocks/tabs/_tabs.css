@@ -1,0 +1,18 @@
+:root
+{
+
+}
+
+section.tabs
+{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: calc(25px + var(--theme__sizes__page--width));
+  margin: 0 auto;
+}
+
+section.tabs > img
+{
+  flex-basis: 615px;
+}
