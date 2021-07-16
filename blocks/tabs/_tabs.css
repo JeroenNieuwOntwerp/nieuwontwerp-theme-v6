@@ -85,6 +85,22 @@ section.tabs > .tabs--text > span.tabs--text--row h3
     line-height: 1.2727em;
     font-weight: 700;
     cursor: pointer;
+    position: relative;
+}
+
+section.tabs > .tabs--text > span.tabs--text--row h3::before
+{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -12px;
+  background-image: url('../../assets/img/chevron-black.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 24px;
+  width: 24px;
 }
 
 section.tabs > .tabs--text > span.tabs--text--row p
@@ -103,6 +119,12 @@ section.tabs > .tabs--text > span.tabs--text--row.is-active > h3
 {
   color: #DD1742;
 }
+
+section.tabs > .tabs--text > span.tabs--text--row.is-active h3::before
+{
+  background-image: url('../../assets/img/chevron-red.svg');
+}
+
 
 section.tabs > .tabs--text > span.tabs--text--row.is-active p
 {
