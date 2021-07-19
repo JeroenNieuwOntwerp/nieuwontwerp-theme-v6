@@ -7,7 +7,7 @@ $_options__margin_top = get_sub_field('margin-top');
 $_options__margin_bottom = get_sub_field('margin-bottom');
 if($_options__archive_type == 'latest')
 {
-  echo '<section class="archive archive-type-latest-news-and-projects" style="margin-top: '. $_options__margin_top .'px !important; margin-bottom: '. $_options__margin_bottom .'px !important;">';
+  echo '<section class="archive archive-type-latest-news-and-projects row-id-'. $_row_id .'" style="margin-top: '. $_options__margin_top .'px !important; margin-bottom: '. $_options__margin_bottom .'px !important;">';
   $_latest__project__args = array(
     'post_type' => 'project',
     'posts_per_page' => '2',

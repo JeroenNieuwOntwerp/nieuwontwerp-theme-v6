@@ -13,7 +13,7 @@ $_options__margin_bottom = get_sub_field('margin-bottom');
 
 if($_options__quotation_symbol == '1')
 {
-  echo '<section class="text-and-photo is-quote text-'. $_options__text_position .'" style="margin-top: '. $_options__margin_top .'px !important; margin-bottom: '. $_options__margin_bottom .'px !important;">';
+  echo '<section class="text-and-photo is-quote text-'. $_options__text_position .' row-id-'. $_row_id .'" style="margin-top: '. $_options__margin_top .'px !important; margin-bottom: '. $_options__margin_bottom .'px !important;">';
 } else {
   echo '<section class="text-and-photo text-'. $_options__text_position .'" style="margin-top: '. $_options__margin_top .'px !important; margin-bottom: '. $_options__margin_bottom .'px !important;">';
 }

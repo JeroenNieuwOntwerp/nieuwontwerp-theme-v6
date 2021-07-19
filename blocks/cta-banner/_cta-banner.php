@@ -15,7 +15,7 @@ $_button_pseudo = 'false';
 $_options__margin_top = get_sub_field('margin-top');
 $_options__margin_bottom = get_sub_field('margin-bottom');
 
-echo '<section class="cta-banner" style="transform: translateY('. $_options_vertical_offset .'px); margin-top: '. $_options__margin_top .'px !important; margin-bottom: '. $_options__margin_bottom .'px !important;"">
+echo '<section class="cta-banner row-id-'. $_row_id .'" style="transform: translateY('. $_options_vertical_offset .'px); margin-top: '. $_options__margin_top .'px !important; margin-bottom: '. $_options__margin_bottom .'px !important;"">
   <img class="cta-banner--image image-id-'. $_options_image["ID"] .'" src="' . $_options_image["value"]["url"] . '" alt="'. $_options_image["value"]["alt"] . '" />
   <div class="cta-banner--overlay" style="background-image: linear-gradient(90deg, '. $_options_overlay_colour .'FF 50%, '. $_options_overlay_colour .'33 100%);"></div>
   <span class="cta-banner--content">

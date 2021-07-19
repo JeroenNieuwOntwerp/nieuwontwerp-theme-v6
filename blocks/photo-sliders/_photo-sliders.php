@@ -9,9 +9,9 @@ $_options__margin_bottom = get_sub_field('margin-bottom');
 //
 if($_options == 'left')
 {
-  echo '<section class="photo-sliders primary-left" style="margin-top: '. $_options__margin_top .'px !important; margin-bottom: '. $_options__margin_bottom .'px !important;">';
+  echo '<section class="photo-sliders primary-left row-id-'. $_row_id .'" style="margin-top: '. $_options__margin_top .'px !important; margin-bottom: '. $_options__margin_bottom .'px !important;">';
 } else {
-  echo '<section class="photo-sliders primary-right" style="margin-top: '. $_options__margin_top .'px !important; margin-bottom: '. $_options__margin_bottom .'px !important;">';
+  echo '<section class="photo-sliders primary-right row-id-'. $_row_id .'" style="margin-top: '. $_options__margin_top .'px !important; margin-bottom: '. $_options__margin_bottom .'px !important;">';
 };
 if($_options == 'left')
 {

@@ -5,7 +5,7 @@ $_row_id = get_row_index();
 $_options__margin_top = get_sub_field('margin-top');
 $_options__margin_bottom = get_sub_field('margin-bottom');
 
-echo '<section class="contact-information flex" style="margin-top: '. $_options__margin_top .'px !important; margin-bottom: '. $_options__margin_bottom .'px !important;">';
+echo '<section class="contact-information flex row-id-'. $_row_id .'" style="margin-top: '. $_options__margin_top .'px !important; margin-bottom: '. $_options__margin_bottom .'px !important;">';
 while( have_rows('contact-information--contacts') ) :
   the_row();
   $_post = get_sub_field('contact-information--contact');

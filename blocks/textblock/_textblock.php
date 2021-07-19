@@ -18,7 +18,7 @@ if($_options_border == '1')
   $_text_options .= ' text--border-left';
 }
 //
-echo '<section class="textblock" style="margin-top: '. $_options__margin_top .'px !important; margin-bottom: '. $_options__margin_bottom .'px !important;">
+echo '<section class="textblock row-id-'. $_row_id .'" style="margin-top: '. $_options__margin_top .'px !important; margin-bottom: '. $_options__margin_bottom .'px !important;">
   <article class="text--container text-id-'. $_content["ID"] . $_text_options . '">
     '. $_content["value"] .'
   </article>

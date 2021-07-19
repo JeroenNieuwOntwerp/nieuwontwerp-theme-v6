@@ -8,7 +8,7 @@ $_tile_overlaycolour = get_sub_field('overlaycolour');
 $_options__margin_top = get_sub_field('margin-top');
 $_options__margin_bottom = get_sub_field('margin-bottom');
 
-echo '<section class="cta-tiles cta-tiles-layout-'. $_options__layout .'" style="margin-top: '. $_options__margin_top .'px !important; margin-bottom: '. $_options__margin_bottom .'px !important;">';
+echo '<section class="cta-tiles cta-tiles-layout-'. $_options__layout .' row-id-'. $_row_id .'" style="margin-top: '. $_options__margin_top .'px !important; margin-bottom: '. $_options__margin_bottom .'px !important;">';
 if( $_options__content_type == 'custom' )
 {
   while( have_rows('options--content-type--custom--repeater') )

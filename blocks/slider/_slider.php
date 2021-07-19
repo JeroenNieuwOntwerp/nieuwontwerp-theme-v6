@@ -6,7 +6,7 @@ $_options__layout = get_sub_field('options--layout');
 $_options__margin_top = get_sub_field('margin-top');
 $_options__margin_bottom = get_sub_field('margin-bottom');
 
-echo '<section class="slider slider-layout-' . $_options__layout . '" style="margin-top: '. $_options__margin_top .'px !important; margin-bottom: '. $_options__margin_bottom .'px !important;">
+echo '<section class="slider slider-layout-' . $_options__layout . ' row-id-'. $_row_id .'" style="margin-top: '. $_options__margin_top .'px !important; margin-bottom: '. $_options__margin_bottom .'px !important;">
  <div class="slider__wrapper slider-id-'. $_row_id .'">';
  while( have_rows('slider--repeater') )
  {
