@@ -1,6 +1,5 @@
 <?php
 defined( 'ABSPATH' ) || exit;
-$_button_id = get_row_index();
 if($_button_options__style == 'transparent')
 {
     if($_button_options__external == '1')

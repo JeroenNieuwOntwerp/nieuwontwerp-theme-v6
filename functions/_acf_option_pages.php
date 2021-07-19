@@ -18,6 +18,14 @@ function no_acf_option_pages() {
           'capability'    => 'edit_posts',
           'redirect'      => false
       ));
+
+      $option_page = acf_add_options_page(array(
+          'page_title'    => __('Filter Settings'),
+          'menu_title'    => __('Filter Settings'),
+          'menu_slug'     => 'filter-settings',
+          'capability'    => 'edit_posts',
+          'redirect'      => false
+      ));
 };
 
 ?>
