@@ -65,11 +65,11 @@ if($_button_options__style == 'transparent')
   };
 }
 echo '<style>
-  #button-id-'. $_button_options__ID .':after
+  #button-id-'. $_button_id .':after
   {
     border-color: '. $_button_options__text_colour .';
   }
-  #button-id-'. $_button_options__ID .' #arrow
+  #button-id-'. $_button_id .' #arrow
   {
     fill: '. $_button_options__text_colour .';
   }
