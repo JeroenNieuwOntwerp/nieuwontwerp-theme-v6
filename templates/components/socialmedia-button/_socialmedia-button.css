@@ -13,6 +13,7 @@ p.socialmedia--button
 p.socialmedia--button > a
 {
   display: block;
+  position: relative;
   height: 100%;
   width: 100%;
   background: #FFFFFF;
@@ -35,7 +36,6 @@ p.socialmedia--button > a:visited
 
 p.socialmedia--button > a > img
 {
-  display: block;
   position: absolute;
   top: 0;
   left: 0;
