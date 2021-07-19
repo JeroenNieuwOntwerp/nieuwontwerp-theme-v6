@@ -9,7 +9,7 @@ get_header();
 include_once(__DIR__ . '/nav/_nav.php');
 include_once(__DIR__ . '/headers/header-sub/_header-sub.php');
 
-$_product_family = get_the_slug();
+$_product_family = $post->post_name;
 
 echo '<main>';
 echo '<section class="product-family-index product-family-'. $_product_family .'">';
