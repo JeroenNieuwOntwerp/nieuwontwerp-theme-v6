@@ -2,7 +2,7 @@
 defined( 'ABSPATH' ) || exit;
 
 echo '<nav class="nav--bars--upper">
-  <a href="'. site_url() .'" rel="noopener nofollow noreferrer" class="home__button">DIESEKO GROUP</a>';
+  <a href="'. site_url() .'" rel="noopener nofollow noreferrer" class="home__button"><img src="'__DIR__ .'/../../assets/img/logo.svg" alt="Dieseko Group B.V."</a>';
 
 $_submenu_options = array(
   'items_wrap'      => '<ul class="web menu" id="%1$s">%3$s</ul>',
