@@ -21,8 +21,9 @@ if( have_rows('product--filters', 'options') )
     {
       the_row();
       $_acf_field = get_sub_field_object('product--filter--filters--filter')
-      $value = $_acf_field['value'];
-      echo '<h5>'. $_acf_field['choices'][ $value ] .'</h5>';
+      $_value = $_acf_field['value'];
+      $_label = $_acf_field['choices'][ $value ]
+      echo '<h5>'. $_label .'</h5>';
     }
   };
   echo '</div>';
