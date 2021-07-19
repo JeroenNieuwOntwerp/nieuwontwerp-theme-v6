@@ -19,6 +19,7 @@ if( have_rows('product--filters', 'options') )
     the_row();
     $term = get_sub_field('product--filter--for');
     $_term_string = $term->name;
+    echo $_term_string;
     if($_term_string == $_product_family)
     {
       if( have_rows('product--filter--filters') )
