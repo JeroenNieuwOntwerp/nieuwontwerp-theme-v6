@@ -23,8 +23,21 @@ nav
 
 nav.nav--bars--upper
 {
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.home__button
+{
+  display: block;
+}
+
+.home__button img
+{
+  height: 100%;
+  width: 100%;
+  object-fit: scale-down;
+  object-position: center;
 }
 
 nav.nav--bars--lower
