@@ -17,16 +17,21 @@ if( have_rows('product--filters', 'options') )
   while( have_rows('product--filters', 'options') )
   {
     the_row();
-    $__id = get_sub_field('product--filter--for');
-    $_terms = get_term( $__id , 'product-family' );
-    echo $_terms;
-    while( have_rows('product--filter--filters') )
+    $_id = get_sub_field('product--filter--for');
+    $__product_families = get_terms( 'product-family', array('hide_empty' => false) );
+    foreach($__product_families as $__product_family)
     {
-      the_row();
-      $_acf_field = get_sub_field_object('product--filter--filters--filter');
-      $_value = $_acf_field['value'];
-      $_label = $_acf_field['choices'][ $_value ];
-      echo '<h5>'. $_label .'</h5>';
+      if($__product_family->ID == $_id)
+      {
+        while( have_rows('product--filter--filters') )
+        {
+          the_row();
+          $_acf_field = get_sub_field_object('product--filter--filters--filter');
+          $_value = $_acf_field['value'];
+          $_label = $_acf_field['choices'][ $_value ];
+          echo '<h5>'. $_label .'</h5>';
+        }
+      }
     }
   };
   echo '</div>';
