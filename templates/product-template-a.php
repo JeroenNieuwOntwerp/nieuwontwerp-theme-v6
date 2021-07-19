@@ -20,7 +20,9 @@ if( have_rows('product--filters', 'options') )
     while( have_rows('product--filter--filters') )
     {
       the_row();
-      echo '<h5>'. get_sub_field('product--filter--filters--filter') . '</h5>';
+      $_acf_field = get_sub_field_object('product--filter--filters--filter')
+      $value = $_acf_field['value'];
+      echo '<h5>'. $_acf_field['choices'][ $value ] .'</h5>';
     }
   };
   echo '</div>';
