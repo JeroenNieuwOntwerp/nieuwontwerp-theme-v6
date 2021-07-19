@@ -17,7 +17,7 @@ $_initial_args = array(
 		 'orderby' => 'name',
 		 'order'	=> 'ASC',
 		 'post_type' => 'products',
-		 'tax_query' => array('taxonomy' => 'product-family', 'terms' => $_product_family, 'field' => 'name')
+		 'tax_query' => array(array('taxonomy' => 'product-family', 'terms' => $_product_family, 'field' => 'name'))
 	 );
 
 $_initial_query = new WP_Query( $_initial_args );
