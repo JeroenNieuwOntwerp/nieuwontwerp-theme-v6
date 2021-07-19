@@ -34,10 +34,10 @@ echo '<footer>
       $_button_options__style = 'transparent';
       $_button_options__text_colour = '#FFFFFF';
       $_button_options__label = get_sub_field('footer--contactlink--label');
-      if( get_sub_field('footer--contactlink--type' == 'mailto') )
+      if( get_sub_field('footer--contactlink--type') == 'mailto' )
       {
         $_button_options__url = 'mailto:' . get_sub_field('footer--contactlink--url');
-      }elseif( get_sub_field('footer--contactlink--type' == 'tel') )
+      }elseif( get_sub_field('footer--contactlink--type') == 'tel' )
       {
         $_button_options__url = 'tel:' . get_sub_field('footer--contactlink--url');
       } else {
