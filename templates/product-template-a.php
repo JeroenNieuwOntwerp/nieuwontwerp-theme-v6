@@ -18,7 +18,7 @@ if( have_rows('product--filters', 'options') )
   {
     the_row();
     $term = get_sub_field_object('product--filter--for');
-    echo $term->name;
+    printr($term);
     while( have_rows('product--filter--filters') )
     {
       the_row();
