@@ -47,7 +47,7 @@ while(have_rows('tabs--repeater'))
   echo'<script>
     $(document).ready(function()
     {
-      $(".tabs--text--row.tab-id-'. $_tab_id .' .tab-title").click(function(){
+      $(".tabs--text--row.tab-id-'. $_tab_id .' .tab-title").hover(function(){
           $(".tab-image").removeClass("is-active");
           $(".tabs--text--row").removeClass("is-active");
           $(".tab-image.tab-id-'. $_tab_id .'").addClass("is-active");
