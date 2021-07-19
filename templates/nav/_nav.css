@@ -23,8 +23,10 @@ nav
 
 nav.nav--bars--upper
 {
-  padding: 0 18px;
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
+
 nav.nav--bars--lower
 {
   background-color: #202020;
