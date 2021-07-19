@@ -42,33 +42,17 @@
     transform: scale(1.0675);
 }
 
-.cta-tile-image-icon span.cta-tile--icon
+.cta-tile-image-icon img.cta-tile--icon
 {
-  display: table;
+  display: block;
   height: 80px;
+  object-fit: contain;
+  object-position: center;
   width: 80px;
   box-sizing: border-box;
   position: absolute;
   right: 0;
   bottom: 133px;
-}
-
-.cta-tile-image-icon span.cta-tile--icon > i
-{
-  display: table-cell;
-  height: 100%;
-  width: 100%;
-  box-sizing: border-box;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.cta-tile-image-icon span.cta-tile--icon > i > img
-{
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-  object-position: center;
 }
 
 .cta-tile-image-icon > span.cta-tile--content
