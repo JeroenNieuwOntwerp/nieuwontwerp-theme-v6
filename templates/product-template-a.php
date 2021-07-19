@@ -18,8 +18,8 @@ if( have_rows('product--filters', 'options') )
   {
     the_row();
     $__id = get_sub_field('product--filter--for');
-    $_term = get_term( $__id , array('hide_empty' => true) );
-    echo $_term;
+    $_terms = get_terms( $__id , array('hide_empty' => true) );
+    echo $_terms;
     while( have_rows('product--filter--filters') )
     {
       the_row();
