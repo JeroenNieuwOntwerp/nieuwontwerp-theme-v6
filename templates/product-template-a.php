@@ -11,6 +11,27 @@ include_once(__DIR__ . '/headers/header-sub/_header-sub.php');
 
 $_product_family = $post->post_name;
 echo '<main>';
+if( have_rows('product--filters', 'options') )
+{
+  echo '<div>';
+  while( have_rows('product--filters', 'options') )
+  {
+    the_row();
+    if(get_sub_field('product--filter--for') == $_product_family)
+    {
+      if( have_rows('product--filter--filters') )
+      {
+        while( have_rows('product--filter--filters') )
+        {
+          the_row();
+          echo '<h5>'. get_sub_field('product--filter--filters--filter') . '</h5>';
+        }
+      }
+    }
+  }
+  echo '</div>';
+}
+
 echo '<section class="product-family-index product-family-'. $_product_family .'">';
 $_initial_args = array(
 		 'orderby' => 'name',
