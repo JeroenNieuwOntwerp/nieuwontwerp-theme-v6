@@ -9,8 +9,6 @@ get_header();
 include_once(__DIR__ . '/nav/_nav.php');
 include_once(__DIR__ . '/headers/header-sub/_header-sub.php');
 
-$_product_family = $post->post_name;
-print_r(get_terms( 'product-family', array('hide_empty' => false) ));
 echo '<main>';
 echo '<section class="product-family-index product-family-'. $_product_family .'">';
 $_initial_args = array(
@@ -19,7 +17,6 @@ $_initial_args = array(
 		 'post_type' => 'products'
 	 );
 $_initial_args['tax_query'][] = array('taxonomy' => 'product-family', 'terms' =>  $_product_family, 'field' => 'slug');
-print_r($_initial_args);
 $_initial_query = new WP_Query( $_initial_args );
 if( $_initial_query->have_posts() )
 {
