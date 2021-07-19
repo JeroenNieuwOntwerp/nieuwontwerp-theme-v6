@@ -10,7 +10,6 @@ include_once(__DIR__ . '/nav/_nav.php');
 include_once(__DIR__ . '/headers/header-sub/_header-sub.php');
 
 $_product_family = $post->post_name;
-$__product_families = get_terms( 'product-family', array('hide_empty' => false) );
 echo '<main>';
 if( have_rows('product--filters', 'options') )
 {
@@ -18,19 +17,15 @@ if( have_rows('product--filters', 'options') )
   while( have_rows('product--filters', 'options') )
   {
     the_row();
-    $_id = get_sub_field('product--filter--for');
-    foreach($__product_families as $__product_family)
+    if( get_sub_field('product--filter--for') == get_the_title() )
     {
-      if($__product_family->term_id == $_id)
+      while( have_rows('product--filter--filters') )
       {
-        while( have_rows('product--filter--filters') )
-        {
-          the_row();
-          $_acf_field = get_sub_field_object('product--filter--filters--filter');
-          $_value = $_acf_field['value'];
-          $_label = $_acf_field['choices'][ $_value ];
-          echo '<h5>'. $_label .'</h5>';
-        }
+        the_row();
+        $_acf_field = get_sub_field_object('product--filter--filters--filter');
+        $_value = $_acf_field['value'];
+        $_label = $_acf_field['choices'][ $_value ];
+        echo '<h5>'. $_label .'</h5>';
       }
     }
   };
