@@ -23,7 +23,6 @@ if( have_rows('product--filters', 'options') )
       echo '<h5>'. get_sub_field('product--filter--filters--filter') . '</h5>';
     }
   };
-};
   echo '</div>';
 };
 echo '<section class="product-family-index product-family-'. $_product_family .'">';
