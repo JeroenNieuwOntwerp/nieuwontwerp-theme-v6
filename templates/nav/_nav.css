@@ -12,6 +12,8 @@ nav
   width: calc(100% - calc(var(--nav__margin_right) + var(--nav__margin_left)));
   margin-right: var(--nav__margin_right);
   margin-left: var(--nav__margin_left);
+  align-items: center;
+  align-content: center;
   position: relative;
   box-sizing: border-box;
   height: var(--nav__upper__max-height);
