@@ -17,7 +17,11 @@ if( have_rows('product--filters', 'options') )
   while( have_rows('product--filters', 'options') )
   {
     the_row();
-    echo '<h5>'. get_sub_field('product--filter--filters--filter') . '</h5>';
+    while( have_rows('product--filter--filters') )
+    {
+      the_row();
+      echo '<h5>'. get_sub_field('product--filter--filters--filter') . '</h5>';
+    }
   };
 };
   echo '</div>';
