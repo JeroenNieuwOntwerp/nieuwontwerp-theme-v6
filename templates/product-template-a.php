@@ -17,7 +17,8 @@ if( have_rows('product--filters', 'options') )
   while( have_rows('product--filters', 'options') )
   {
     the_row();
-    $_term = get_term( get_sub_field('product--filter--for'), array('hide_empty' => true) );
+    $__id = get_sub_field('product--filter--for');
+    $_term = get_term( $__id , array('hide_empty' => true) );
     echo $_term;
     while( have_rows('product--filter--filters') )
     {
