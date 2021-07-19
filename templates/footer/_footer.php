@@ -54,7 +54,8 @@ echo '<footer>
     while( have_rows('footer--socialmedia', 'options') )
     {
       the_row();
-      $_socialmedia_icon = get_sub_field_object('footer--socialmedia--icon');
+      $_socialmedia_icon_norm = get_sub_field_object('footer--socialmedia--icon--norm');
+      $_socialmedia_icon_hover = get_sub_field_object('footer--socialmedia--icon--hover');
       $_socialmedia_url = get_sub_field('footer--socialmedia--url');
       include(__DIR__ . '/../components/socialmedia-button/_socialmedia-button.php' );
     }
