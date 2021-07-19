@@ -36,8 +36,33 @@ p.socialmedia--button > a:visited
 p.socialmedia--button > a > img
 {
   display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   height: 100%;
   width: 100%;
   object-fit: scale-down;
   object-position: center;
+}
+
+p.socialmedia--button > a > img.socialmedia--button--icon--default
+{
+  display: block;
+}
+
+p.socialmedia--button > a > img.socialmedia--button--icon--hover
+{
+  display: none;
+}
+
+p.socialmedia--button > a:hover > img.socialmedia--button--icon--default
+{
+  display: none;
+}
+
+p.socialmedia--button > a:hover > img.socialmedia--button--icon--hover
+{
+  display: block;
 }
