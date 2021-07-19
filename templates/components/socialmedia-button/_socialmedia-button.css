@@ -21,17 +21,7 @@ p.socialmedia--button > a
 
 p.socialmedia--button > a:hover
 {
-
-}
-
-p.socialmedia--button > a:active
-{
-
-}
-
-p.socialmedia--button > a:visited
-{
-
+  background: #202020;
 }
 
 p.socialmedia--button > a > img
