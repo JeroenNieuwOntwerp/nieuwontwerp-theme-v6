@@ -21,7 +21,7 @@ if( have_rows('product--filters', 'options') )
     $__product_families = get_terms( 'product-family', array('hide_empty' => false) );
     foreach($__product_families as $__product_family)
     {
-      if($__product_family->ID == $_id)
+      if($__product_family->term_id == $_id)
       {
         while( have_rows('product--filter--filters') )
         {
