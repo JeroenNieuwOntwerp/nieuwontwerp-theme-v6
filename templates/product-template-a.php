@@ -19,7 +19,7 @@ $_initial_args = array(
 		 'post_type' => 'products',
 		 'tax_query' => array(array('taxonomy' => 'product-family', 'terms' => $_product_family, 'field' => 'name'))
 	 );
-
+print_r($_initial_args);
 $_initial_query = new WP_Query( $_initial_args );
 if( $_initial_query->have_posts() )
 {
