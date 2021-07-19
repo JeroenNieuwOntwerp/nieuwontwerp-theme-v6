@@ -16,9 +16,9 @@ echo '<section class="product-family-index product-family-'. $_product_family .'
 $_initial_args = array(
 		 'orderby' => 'name',
 		 'order'	=> 'ASC',
-		 'post_type' => 'products',
-		 'tax_query' => array(array('taxonomy' => 'product-family', 'terms' => $_product_family, 'field' => 'name'))
+		 'post_type' => 'products'
 	 );
+$_initial_args['tax_query'][] = array('taxonomy' => 'product-family', 'terms' =>  $_product_family, 'field' => 'name');  
 print_r($_initial_args);
 $_initial_query = new WP_Query( $_initial_args );
 if( $_initial_query->have_posts() )
