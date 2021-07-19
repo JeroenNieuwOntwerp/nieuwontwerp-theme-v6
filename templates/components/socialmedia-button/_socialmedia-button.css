@@ -1,0 +1,43 @@
+:root
+{
+
+}
+
+p.socialmedia--button
+{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+}
+
+p.socialmedia--button > a
+{
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: #FFFFFF;
+}
+
+p.socialmedia--button > a:hover
+{
+
+}
+
+p.socialmedia--button > a:active
+{
+
+}
+
+p.socialmedia--button > a:visited
+{
+
+}
+
+p.socialmedia--button > a > img
+{
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: scale-down;
+  object-position: center;
+}

@@ -27,6 +27,7 @@ echo '<footer>
   <div class="footer__contactinformation">' . get_field('footer--contactinfo', 'options') . '</div>';
   if( have_rows('footer--contactlinks', 'options') )
   {
+    echo '<div class="footer__contactlinks">';
     while( have_rows('footer--contactlinks', 'options') )
     {
       the_row();
@@ -45,9 +46,21 @@ echo '<footer>
       }
       include(__DIR__ . '/../components/button/_button.php' );
     }
-  }
- '
- </section>
+    echo '</div>';
+  };
+  if( have_rows('footer--socialmedia', 'options') )
+  {
+    echo '<div class="footer__socialmedia">';
+    while( have_rows('footer--socialmedia', 'options') )
+    {
+      the_row();
+      $_socialmedia_icon = get_sub_field_object('footer--socialmedia--icon');
+      $_socialmedia_url = get_sub_field('footer--socialmedia--url');
+      include(__DIR__ . '/../components/socialmedia-button/_socialmedia-button.php' );
+    }
+    echo '</div>';
+  };
+ echo '</section>
  <section class="footer__section--transparent">
  </section>
 </footer>' . wp_footer() . '

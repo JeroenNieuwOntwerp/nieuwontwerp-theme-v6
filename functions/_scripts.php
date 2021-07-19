@@ -44,6 +44,7 @@ function no_style_loader() {
     wp_enqueue_style( 'no_library_slick_css', get_template_directory_uri() . '/libraries/slick/_slick.css#asyncload' );
     wp_enqueue_style( 'no_templates_components_archiveitem_css', get_template_directory_uri() . '/templates/components/archive-item/_archive-item.css#asyncload' );
     wp_enqueue_style( 'no_templates_components_button_css', get_template_directory_uri() . '/templates/components/button/_button.css#asyncload' );
+    wp_enqueue_style( 'no_templates_components_socialmedia_button_css', get_template_directory_uri() . '/templates/components/socialmedia-button/_socialmedia-button.css#asyncload' );
     wp_enqueue_style( 'no_templates_components_contactcard_css', get_template_directory_uri() . '/templates/components/contact-card/_contact-card.css#asyncload' );
     wp_enqueue_style( 'no_templates_content_css', get_template_directory_uri() . '/templates/content/_content.css#asyncload' );
     wp_enqueue_style( 'no_templates_headers_css', get_template_directory_uri() . '/templates/headers/_headers.css#asyncload' );
