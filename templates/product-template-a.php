@@ -17,11 +17,9 @@ $_initial_args = array(
 		 'orderby' => 'name',
 		 'order'	=> 'ASC',
 		 'post_type' => 'products',
-		 'meta_key' => 'product-family',
-		 'meta_value' => $_product_family
+		 'tax_query' => array('taxonomy' => 'product-family', 'terms' => $_product_family, 'field' => 'name')
 	 );
-print_r($_initial_args);
-printf($_initial_args);
+
 $_initial_query = new WP_Query( $_initial_args );
 if( $_initial_query->have_posts() )
 {
