@@ -17,11 +17,11 @@ if( have_rows('product--filters', 'options') )
   while( have_rows('product--filters', 'options') )
   {
     the_row();
+    $term = get_sub_field_object('product--filter--for');
+    echo $term->name;
     while( have_rows('product--filter--filters') )
     {
       the_row();
-      $term = get_sub_field_object('product--filter--for');
-      echo $term->name;
       $_acf_field = get_sub_field_object('product--filter--filters--filter');
       $_value = $_acf_field['value'];
       $_label = $_acf_field['choices'][ $_value ];
