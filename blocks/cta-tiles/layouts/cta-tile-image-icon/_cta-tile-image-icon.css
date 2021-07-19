@@ -65,8 +65,8 @@
 
 .cta-tile-image-icon span.cta-tile--icon > i > img
 {
-  height: 64px;
-  width: 64px;
+  height: 100%;
+  width: 100%;
   object-fit: contain;
   object-position: center;
 }
