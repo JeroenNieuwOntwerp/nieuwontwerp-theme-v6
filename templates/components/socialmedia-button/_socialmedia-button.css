@@ -30,8 +30,8 @@ p.socialmedia--button > a > img
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 18px;
-  width: 18px;
+  height: 24px;
+  width: 24px;
   object-fit: scale-down;
   object-position: center;
 }
