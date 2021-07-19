@@ -17,17 +17,20 @@ if( have_rows('product--filters', 'options') )
   while( have_rows('product--filters', 'options') )
   {
     the_row();
-    $term = get_sub_field('product--filter--for');
-    $_term_string = $term->name;
-    echo $_term_string;
-    if($_term_string == $_product_family)
+    $terms = get_sub_field('product--filter--for');
+    foreach($terms as $term)
     {
-      if( have_rows('product--filter--filters') )
+      $_term_string = $term->name;
+      echo $_term_string;
+      if($_term_string == $_product_family)
       {
-        while( have_rows('product--filter--filters') )
+        if( have_rows('product--filter--filters') )
         {
-          the_row();
-          echo '<h5>'. get_sub_field('product--filter--filters--filter') . '</h5>';
+          while( have_rows('product--filter--filters') )
+          {
+            the_row();
+            echo '<h5>'. get_sub_field('product--filter--filters--filter') . '</h5>';
+          };
         };
       };
     };
