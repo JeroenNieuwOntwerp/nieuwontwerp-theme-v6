@@ -10,6 +10,7 @@ include_once(__DIR__ . '/nav/_nav.php');
 include_once(__DIR__ . '/headers/header-sub/_header-sub.php');
 
 $_product_family = $post->post_name;
+$__product_families = get_terms( 'product-family', array('hide_empty' => false) );
 echo '<main>';
 if( have_rows('product--filters', 'options') )
 {
@@ -18,7 +19,6 @@ if( have_rows('product--filters', 'options') )
   {
     the_row();
     $_id = get_sub_field('product--filter--for');
-    $__product_families = get_terms( 'product-family', array('hide_empty' => false) );
     foreach($__product_families as $__product_family)
     {
       if($__product_family->term_id == $_id)
