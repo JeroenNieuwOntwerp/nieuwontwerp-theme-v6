@@ -20,8 +20,8 @@ $_initial_args = array(
 		 'meta_key' => 'product-family',
 		 'meta_value' => $_product_family
 	 );
-print_f($_initial_args);
-printr($_initial_args);
+print_r($_initial_args);
+printf($_initial_args);
 $_initial_query = new WP_Query( $_initial_args );
 if( $_initial_query->have_posts() )
 {
