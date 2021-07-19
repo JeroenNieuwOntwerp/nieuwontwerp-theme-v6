@@ -26,13 +26,12 @@ if( have_rows('product--filters', 'options') )
         {
           the_row();
           echo '<h5>'. get_sub_field('product--filter--filters--filter') . '</h5>';
-        }
-      }
-    }
-  }
+        };
+      };
+    };
+  };
   echo '</div>';
-}
-
+};
 echo '<section class="product-family-index product-family-'. $_product_family .'">';
 $_initial_args = array(
 		 'orderby' => 'name',
