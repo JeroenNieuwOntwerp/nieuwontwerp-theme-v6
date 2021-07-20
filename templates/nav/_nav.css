@@ -21,7 +21,7 @@ nav
   padding-right: calc(calc( calc(100vw - var(--theme__sizes__page--width)) / 2) - var(--nav__margin_right));
 }
 
-.mega-sub-menu::before
+.mega-sub-menu li:first-child::before
 {
   content: '';
   clear: none;
