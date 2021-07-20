@@ -36,12 +36,14 @@ nav.nav--bars--lower::after
   user-select: none;
   pointer-events: none;
   opacity: 0;
+  transform: translateY(50px);
   background: #282828;
 }
 
 nav.nav--bars--lower.dropdown-is-active::after
 {
   opacity: 1;
+  transform: translateY(0);
   z-index: 1;
 }
 
