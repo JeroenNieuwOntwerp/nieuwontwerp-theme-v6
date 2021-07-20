@@ -4,7 +4,6 @@
   --nav__lower__max-height: 50px;
   --nav__margin_left: calc(100% * 0.075);
   --nav__margin_right: calc(100% * 0.0375);
-  --nav--dynamic--height: 0px;
 }
 
 nav
@@ -28,10 +27,10 @@ nav.nav--bars--background
   clear: none;
   display: block !important;
   position: absolute;
-  top: 50px;
+  top: 114px;
   left: 0;
   right: 0;
-  height: var(--nav--dynamic--height);
+  height: 0px;
   width: 100%;
   z-index: -1;
   user-select: none;
