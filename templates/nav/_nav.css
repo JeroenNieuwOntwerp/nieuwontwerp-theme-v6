@@ -32,18 +32,17 @@ nav.nav--bars--lower::after
   right: 0;
   height: 100%;
   width: 100%;
-  z-index: 1;
+  z-index: -1;
   user-select: none;
   pointer-events: none;
   opacity: 0;
-  transform: translateY(50px);
   background: #282828;
 }
 
 nav.nav--bars--lower.dropdown-is-active::after
 {
   opacity: 1;
-  transform: translateY(0px);
+  z-index: 1;
 }
 
 nav.nav--bars--upper
