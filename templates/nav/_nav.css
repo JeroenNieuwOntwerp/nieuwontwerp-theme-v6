@@ -21,13 +21,13 @@ nav
   padding-right: calc(calc( calc(100vw - var(--theme__sizes__page--width)) / 2) - var(--nav__margin_right));
 }
 
-nav.nav--bars--lower::before
+nav.nav--bars--lower::after
 {
-  content: "23";
+  content: " ";
   clear: none;
   display: block !important;
   position: absolute;
-  top: 0;
+  top: 50px;
   left: 0;
   right: 0;
   height: 100%;
@@ -58,6 +58,7 @@ nav.nav--bars--upper
 nav.nav--bars--lower
 {
   background-color: #202020;
+  position: relative;
   justify-content: space-between;
   height: var(--nav__lower__max-height);
 }
