@@ -28,8 +28,6 @@ nav.nav--bars--background
   display: block !important;
   position: absolute;
   top: 114px;
-  left: 0;
-  right: 0;
   height: 0px;
   width: 100%;
   user-select: none;
