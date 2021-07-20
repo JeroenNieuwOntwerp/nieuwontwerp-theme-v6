@@ -21,7 +21,7 @@ nav
   padding-right: calc(calc( calc(100vw - var(--theme__sizes__page--width)) / 2) - var(--nav__margin_right));
 }
 
-.mega-sub-menu::before
+nav.nav--bars--lower::before
 {
   content: "23";
   clear: none;
@@ -31,10 +31,8 @@ nav
   left: 0;
   right: 0;
   height: 100%;
-  width: calc(100vw - calc(var(--nav__margin_right) + var(--nav__margin_left)));
-  margin-right: var(--nav__margin_right);
-  margin-left: var(--nav__margin_left);
-  background: olive;
+  width: 100%;
+  background: #282828;
 }
 
 nav.nav--bars--upper
