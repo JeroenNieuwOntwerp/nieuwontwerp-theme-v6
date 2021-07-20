@@ -152,6 +152,12 @@ footer > section.footer__section--red h3
   margin-block-start: 0px;
 }
 
+footer > section.footer__section--red p
+{
+  color: #FFF;
+}
+
+
 footer > section.footer__section--red h3::before
 {
   content: '';
