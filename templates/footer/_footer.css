@@ -45,6 +45,11 @@ footer > section.footer__section--gray h3
   font-weight: 700;
 }
 
+footer > section.footer__section--gray ul
+{
+  padding-inline-start: 24px;
+}
+
 footer > section.footer__section--gray li
 {
   list-style-type: none;
@@ -71,6 +76,12 @@ footer > section.footer__section--gray li a::before
     background-size: contain;
     background-repeat: no-repeat;
     transform: rotate(180deg) translateX(30px);
+    transition: all 200ms ease-in-out;
+}
+
+footer > section.footer__section--gray li a:hover::before
+{
+  transform: rotate(180deg) translateX(18px);
 }
 
 footer > section.footer__section--gray li a,
