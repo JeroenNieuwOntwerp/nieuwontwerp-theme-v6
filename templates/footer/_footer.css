@@ -95,7 +95,20 @@ footer > section.footer__section--gray li a:visited
 
 footer > section.footer__section--red
 {
+  position: relative;
   padding: 60px 0;
+}
+
+footer > section.footer__section--red::after
+{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 520px;
+  height: calc(100% + 140px);
+  top: -40px;
+  left: -150px;
+  background-color: #DD1742;
 }
 
 footer > section.footer__section--red h3
