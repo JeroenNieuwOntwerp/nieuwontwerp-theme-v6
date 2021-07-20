@@ -32,12 +32,11 @@ nav.nav--bars--background
   right: 0;
   height: 0px;
   width: 100%;
-  z-index: -1;
   user-select: none;
   pointer-events: none;
   opacity: 0;
   transform: translateY(50px);
-  transition: all 400ms ease-in-out;
+  transition: all 200ms ease-in-out;
   background: #282828;
 }
 
