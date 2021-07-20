@@ -31,7 +31,9 @@ nav
   left: 0;
   right: 0;
   height: 100%;
-  width: 100%;
+  width: calc(100vw - calc(var(--nav__margin_right) + var(--nav__margin_left)));
+  margin-right: var(--nav__margin_right);
+  margin-left: var(--nav__margin_left);
   background: olive;
 }
 
