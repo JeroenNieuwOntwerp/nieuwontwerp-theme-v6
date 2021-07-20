@@ -44,3 +44,32 @@ footer > section.footer__section--gray h3
   color: #ADB2B7;
   font-weight: 700;
 }
+
+footer > section.footer__section--gray li a
+{
+  position: relative;
+  color: #202020;
+  font-weight: 600;
+  line-height: 2em;
+}
+
+footer > section.footer__section--gray li a::before
+{
+  content: '';
+  height: 12px;
+  width: 12px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url('../../assets/img/chevron-black.svg');
+}
+
+footer > section.footer__section--gray li a,
+footer > section.footer__section--gray li a:hover,
+footer > section.footer__section--gray li a:active,
+footer > section.footer__section--gray li a:visited
+{
+  text-decoration: none;
+  color: #202020;
+}
