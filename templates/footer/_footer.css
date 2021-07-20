@@ -114,7 +114,7 @@ footer > section.footer__section--red
   padding: 45px 0;
 }
 
-footer > section.footer__section--red::after
+footer > section.footer__section--red::before
 {
   content: '';
   display: block;
@@ -127,6 +127,20 @@ footer > section.footer__section--red::after
   z-index: -1;
   background-color: #DD1742;
 }
+
+footer > section.footer__section--red::after
+{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  bottom: 0px;
+  left: -75px;
+  z-index: -1;
+  background-color: #FFF;
+}
+
 
 footer > section.footer__section--red h3
 {
