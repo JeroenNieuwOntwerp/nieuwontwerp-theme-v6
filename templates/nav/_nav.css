@@ -22,7 +22,7 @@ nav
   padding-right: calc(calc( calc(100vw - var(--theme__sizes__page--width)) / 2) - var(--nav__margin_right));
 }
 
-nav.nav--bars--lower::after
+nav.nav--bars--background
 {
   content: " ";
   clear: none;
@@ -42,7 +42,7 @@ nav.nav--bars--lower::after
   background: #282828;
 }
 
-nav.nav--bars--lower.dropdown-is-active::after
+nav.nav--bars--background.dropdown-is-active
 {
   opacity: 1;
   transform: translateY(0);
