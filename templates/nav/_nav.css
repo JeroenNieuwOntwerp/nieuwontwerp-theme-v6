@@ -21,9 +21,10 @@ nav
   padding-right: calc(calc( calc(100vw - var(--theme__sizes__page--width)) / 2) - var(--nav__margin_right));
 }
 
-.nav--bars--lower::after
+.mega-sub-menu::after
 {
-  content: '';
+  content: ' ' !important;
+  clear: none;
   display: block;
   position: absolute;
   top: 0;
