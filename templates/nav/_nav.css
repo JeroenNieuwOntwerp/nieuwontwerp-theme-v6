@@ -36,7 +36,7 @@ nav.nav--bars--lower::after
   user-select: none;
   pointer-events: none;
   opacity: 0;
-  transform: translateY(-50px);
+  transform: translateY(50px);
   background: #282828;
 }
 
