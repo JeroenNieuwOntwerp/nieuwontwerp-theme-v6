@@ -123,6 +123,11 @@ nav.nav--bars--lower div.search__panel img
   object-position: center;
 }
 
+ul.mega-sub-menu
+{
+  height: auto !important;
+}
+
 .search--menu--results
 {
   max-height: 0px;
