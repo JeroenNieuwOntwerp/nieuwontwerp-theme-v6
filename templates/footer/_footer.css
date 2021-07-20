@@ -6,7 +6,20 @@
 footer
 {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
   padding: 0 calc(calc(100% - var(--theme__sizes__page--width)) / 2);
   position: relative;
   box-sizing: border-box;
+}
+
+footer > section.footer__section--gray,
+footer > section.footer__section--transparent
+{
+  flex-basis: 760px;
+}
+
+footer > section.footer__section--red
+{
+  flex-basis: 300px;
 }
