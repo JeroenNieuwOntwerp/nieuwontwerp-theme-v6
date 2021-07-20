@@ -23,7 +23,7 @@ footer > section.footer__section--transparent
 
 footer > section.footer__section--red
 {
-  flex-basis: 300px;
+  flex-basis: 220px;
 }
 
 footer > section.footer__section--gray
@@ -157,6 +157,13 @@ footer > section.footer__section--red h3
 footer > section.footer__section--red p
 {
   color: #FFF;
+}
+
+footer > section.footer__section--red .footer__contactlinks
+{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 
