@@ -31,8 +31,9 @@ nav.nav--bars--background
   left: var(--nav__margin_left);
   right: var(--nav__margin_right);
   margin: 0;
+  padding: 0;
   height: 0px;
-  width: 100%;
+  width: calc(100% - calc(var(--nav__margin_right) + var(--nav__margin_left)));
   user-select: none;
   pointer-events: none;
   opacity: 0;
