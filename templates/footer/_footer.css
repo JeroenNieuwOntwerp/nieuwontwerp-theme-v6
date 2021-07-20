@@ -129,5 +129,6 @@ footer > section.footer__section--red h3::before
   height: 120px;
   width: 1px;
   border-left: 2px dotted #FFF;
-  left: 40px;
+  left: 35px;
+  bottom: 0px;
 }
