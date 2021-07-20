@@ -23,3 +23,16 @@ footer > section.footer__section--red
 {
   flex-basis: 300px;
 }
+
+footer > section.footer__section--gray
+{
+  display: flex;
+  padding: 60px 0;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+footer > section.footer__section--gray > div.footer__menus--left
+{
+  flex-basis: 200px;
+}
