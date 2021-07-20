@@ -30,6 +30,20 @@ footer > section.footer__section--gray
   padding: 60px 0;
   flex-wrap: wrap;
   gap: 60px;
+  position: relative;
+}
+
+footer > section.footer__section--gray::after
+{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 1340px;
+  height: 100%;
+  top: 30px;
+  left: -150px;
+  z-index: -1;
+  background-color: #F1F1F1;
 }
 
 footer > section.footer__section--gray > div.footer__menus--left
