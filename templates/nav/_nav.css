@@ -123,7 +123,7 @@ nav.nav--bars--lower div.search__panel img
   object-position: center;
 }
 
-ul.mega-sub-menu
+nav.nav--bars--lower ul.mega-sub-menu
 {
   height: auto !important;
 }
