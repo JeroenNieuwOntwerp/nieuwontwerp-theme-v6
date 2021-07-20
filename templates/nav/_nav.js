@@ -8,4 +8,9 @@ $(document).ready(function(){
   {
     $('.nav--bars--lower').toggleClass('dropdown-is-active');
   });
+
+  $('.mega-has-dropdown').hover(function()
+  {
+    $('.nav--bars--lower').toggleClass('dropdown-is-active');
+  });
 });
