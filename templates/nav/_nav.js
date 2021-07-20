@@ -3,7 +3,7 @@ $(document).ready(function(){
   {
     jQuery('.search--menu--results').toggleClass('is--open');
   });
-  $('.nav--bars--lower').hover(function()
+  $('.mega-has-dropdown .mega-menu-link').hover(function()
   {
     $('.nav--bars--lower').toggleClass('dropdown-is-active');
   });
