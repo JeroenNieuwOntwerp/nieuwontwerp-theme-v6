@@ -62,8 +62,13 @@ echo '<footer>
     echo '</div>';
   };
  echo '</section>
- <section class="footer__section--transparent">
- </section>
+ <section class="footer__section--transparent">';
+ while( have_rows('footer--subfooter', 'options') )
+ {
+   the_row();
+   echo '<li><a href="'. get_sub_field('subfooter--link--url') .'" rel="noopener nofollow noreferrer">'. get_sub_field('subfooter--link--label') .'</a></li>';
+ }
+ echo '</section>
 </footer>' . wp_footer() . '
 <script>
 AOS.init();
