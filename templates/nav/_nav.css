@@ -21,6 +21,19 @@ nav
   padding-right: calc(calc( calc(100vw - var(--theme__sizes__page--width)) / 2) - var(--nav__margin_right));
 }
 
+.mega-sub-menu::after
+{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: olive;
+}
+
 nav.nav--bars--upper
 {
   padding-top: 12px;
