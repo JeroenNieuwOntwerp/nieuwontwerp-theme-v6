@@ -10,6 +10,6 @@ $(document).ready(function(){
 
   $('.mega-menu-item-has-children.mega-has-dropdown').hover(function()
   {
-    $('.nav--bars--lower').toggleClass('dropdown-is-active');
+    $('nav').toggleClass('dropdown-is-active');
   });
 });
