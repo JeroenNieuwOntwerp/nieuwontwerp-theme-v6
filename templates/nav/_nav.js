@@ -3,13 +3,8 @@ $(document).ready(function(){
   {
     jQuery('.search--menu--results').toggleClass('is--open');
   });
-  $(document).on('hover', '.mega-menu-item-has-children.mega-has-dropdown', function()
+  $('.mega-menu-item').hover(function()
   {
-    jQuery('.nav--bars--lower').toggleClass('dropdown-is-active');
-  });
-
-  $('.mega-menu-item-has-children.mega-has-dropdown').hover(function()
-  {
-    $('nav').toggleClass('dropdown-is-active');
+    $('.nav--bars--lower').toggleClass('dropdown-is-active');
   });
 });
