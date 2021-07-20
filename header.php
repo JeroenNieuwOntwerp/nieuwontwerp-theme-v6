@@ -1,3 +1,6 @@
+<?php
+$_button_index = 0;
+?>
 <!doctype html>
 <html class="no-js" lang="en" style="margin-top: 0px !important;">
 <head>
