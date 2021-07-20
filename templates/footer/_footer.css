@@ -135,7 +135,7 @@ footer > section.footer__section--red::after
   position: absolute;
   width: 45px;
   height: 45px;
-  bottom: 0px;
+  bottom: -45px;
   left: -75px;
   z-index: -1;
   background-color: #FFF;
