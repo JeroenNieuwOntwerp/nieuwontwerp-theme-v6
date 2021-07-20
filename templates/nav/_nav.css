@@ -23,7 +23,7 @@ nav
 
 .mega-sub-menu li:first-child::before
 {
-  content: '';
+  content: "23";
   clear: none;
   display: block;
   position: absolute;
