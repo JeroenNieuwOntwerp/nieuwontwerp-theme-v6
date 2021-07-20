@@ -36,3 +36,11 @@ footer > section.footer__section--gray > div.footer__menus--left
 {
   flex-basis: 200px;
 }
+
+footer > section.footer__section--gray h3
+{
+  font-size: 1.57em;
+  line-height: 1.27em;
+  color: #ADB2B7;
+  font-weight: 700;
+}
