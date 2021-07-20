@@ -105,9 +105,10 @@ footer > section.footer__section--red::after
   display: block;
   position: absolute;
   width: 520px;
-  height: calc(100% + 140px);
+  height: 100%;
   top: -40px;
   left: -150px;
+  z-index: -1;
   background-color: #DD1742;
 }
 
