@@ -57,6 +57,7 @@ footer > section.footer__section--gray h3
   line-height: 1.27em;
   color: #ADB2B7;
   font-weight: 700;
+  margin-block-start: 0px;
 }
 
 footer > section.footer__section--gray ul
@@ -110,7 +111,7 @@ footer > section.footer__section--gray li a:visited
 footer > section.footer__section--red
 {
   position: relative;
-  padding: 60px 0;
+  padding: 45px 0;
 }
 
 footer > section.footer__section--red::after
@@ -133,6 +134,7 @@ footer > section.footer__section--red h3
   line-height: 1.27em;
   color: #FFF;
   font-weight: 700;
+  margin-block-start: 0px;
 }
 
 footer > section.footer__section--red h3::before
