@@ -114,8 +114,20 @@ footer > section.footer__section--red::after
 
 footer > section.footer__section--red h3
 {
+  position: relative;
   font-size: 1.57em;
   line-height: 1.27em;
   color: #FFF;
   font-weight: 700;
+}
+
+footer > section.footer__section--red h3::before
+{
+  content: '';
+  display: block;
+  position: absolute;
+  height: 120px;
+  width: 1px;
+  border-left: 2px dotted #FFF;
+  left: 40px;
 }
