@@ -7,4 +7,9 @@ $(document).ready(function(){
   {
     jQuery('.nav--bars--lower').toggleClass('dropdown-is-active');
   });
+
+  $('.mega-menu-item-has-children.mega-has-dropdown').hover(function()
+  {
+    $('.nav--bars--lower').toggleClass('dropdown-is-active');
+  });
 });
