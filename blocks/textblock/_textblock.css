@@ -5,6 +5,11 @@ section.textblock
   margin: 0 auto;
 }
 
+section.textblock.text--full-width
+{
+  max-width: calc(25px + var(--theme__sizes__page--width));
+}
+
 article.text--container
 {
   padding: 5px 20px;

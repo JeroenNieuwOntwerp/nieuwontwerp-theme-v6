@@ -27,7 +27,7 @@ footer > section.footer__section--red
 footer > section.footer__section--gray
 {
   display: flex;
-  padding: 45px 200px 45px 0;
+  padding: 45px 90px 45px 0;
   flex-wrap: wrap;
   gap: 60px;
   position: relative;
@@ -39,7 +39,7 @@ footer > section.footer__section--gray::after
   display: block;
   position: absolute;
   width: 1340px;
-  height: 100%;
+  height: calc(100% + 45px);
   top: -45px;
   left: -150px;
   z-index: -1;
