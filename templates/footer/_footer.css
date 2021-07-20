@@ -92,3 +92,16 @@ footer > section.footer__section--gray li a:visited
   text-decoration: none;
   color: #202020;
 }
+
+footer > section.footer__section--red
+{
+  padding: 60px 0;
+}
+
+footer > section.footer__section--red h3
+{
+  font-size: 1.57em;
+  line-height: 1.27em;
+  color: #FFF;
+  font-weight: 700;
+}
