@@ -88,7 +88,7 @@ footer > section.footer__section--gray li a::before
     display: block;
     position: absolute;
     left: 0px;
-    top: 0;
+    top: -2px;
     background-image: url('../../assets/img/chevron-black.svg');
     background-size: contain;
     background-repeat: no-repeat;
@@ -163,6 +163,13 @@ footer > section.footer__section--red .footer__contactlinks
 {
   display: flex;
   flex-direction: column;
+  gap: 20px;
+}
+
+footer > section.footer__section--red .footer__socialmedia
+{
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
