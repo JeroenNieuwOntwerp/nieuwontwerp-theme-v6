@@ -13,6 +13,7 @@ section.textblock.text--full-width
 article.text--container
 {
   padding: 5px 20px;
+  max-width: var(--theme__sizes__textrow--width);
 }
 
 article.text--container > h1,
