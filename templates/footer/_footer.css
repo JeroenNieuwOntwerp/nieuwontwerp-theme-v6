@@ -136,10 +136,10 @@ footer > section.footer__section--red::before
   display: block;
   position: absolute;
   width: 520px;
-  height: calc(100% + 45px);
+  height: calc(100% + 48px);
   top: 0px;
-  bottom: 45px;
-  left: -75px;
+  bottom: 48px;
+  left: -81px;
   z-index: -2;
   background-color: #DD1742;
 }
