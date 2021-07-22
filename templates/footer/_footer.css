@@ -234,6 +234,14 @@ footer > section.footer__section--transparent > li > a:visited
   text-decoration: underline;
 }
 
+footer > section.footer__section--transparent > li:last-child a img
+{
+  height: 22px;
+  width: 44px;
+  object-fit: scale-down;
+  object-position: center;
+}
+
 footer > section.footer__section--transparent > li:last-child a img.mm-default
 {
     display: inline-block;
