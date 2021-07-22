@@ -20,6 +20,10 @@ section.slider .slick-track
 section.slider .slick-slide
 {
   padding: 0 15px;
+}
+
+section.slider .slick-slide.slick-active
+{
   width: 308px !important;
 }
 
