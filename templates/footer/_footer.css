@@ -210,25 +210,25 @@ footer > section.footer__section--transparent > li:last-child
   border-right: none;
 }
 
-footer > section.footer__section--transparent > li > a
+footer > section.footer__section--transparent > li > a:not(:last-child)
 {
   color: #ADB2B7;
   text-decoration: none;
 }
 
-footer > section.footer__section--transparent > li > a:hover
+footer > section.footer__section--transparent > li > a:not(:last-child):hover
 {
   color: #ADB2B7;
   text-decoration: underline;
 }
 
-footer > section.footer__section--transparent > li > a:active;
+footer > section.footer__section--transparent > li > a:not(:last-child):active;
 {
   color: #202020;
   text-decoration: none;
 }
 
-footer > section.footer__section--transparent > li > a:visited
+footer > section.footer__section--transparent > li > a:not(:last-child):visited
 {
   color: #ADB2B7;
   text-decoration: underline;
@@ -236,7 +236,7 @@ footer > section.footer__section--transparent > li > a:visited
 
 footer > section.footer__section--transparent > li:last-child a img.mm-default
 {
-    display: block;
+    display: inline-block;
 }
 
 footer > section.footer__section--transparent > li:last-child a img.mm-hover
@@ -251,5 +251,5 @@ footer > section.footer__section--transparent > li:last-child a:hover img.mm-def
 
 footer > section.footer__section--transparent > li:last-child a:hover img.mm-hover
 {
-    display: block;
+    display: inline-block;
 }
