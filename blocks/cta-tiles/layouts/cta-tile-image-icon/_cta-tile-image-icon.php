@@ -11,7 +11,7 @@ $_button_pseudo = 'true';
 
 echo '<a href="'. $_tile_url .'" rel="noopener nofollow noreferrer" class="cta-tile-image-icon">
   <div class="cta-tile--image-wrapper">
-    <div class="cta-tile--image--icon--image image-id-'. $_tile_image["ID"] .'" style="background-image: url(' . $_tile_image["value"]["url"] . '); background-color: '. get_field('icon--background') .'"></div>
+    <div class="cta-tile--image--icon--image image-id-'. $_tile_image["ID"] .'" style="background-image: url(' . $_tile_image["value"]["url"] . '); background-color: '. get_sub_field('icon--background') .'"></div>
   </div>
   <img class="cta-tile--icon" src="'. $_tile_icon["value"]["url"] .'" alt="'. $_tile_icon["value"]["url"] .'" />
   <span class="cta-tile--content" style="color: '. $_tile_textcolour .' !important;">
