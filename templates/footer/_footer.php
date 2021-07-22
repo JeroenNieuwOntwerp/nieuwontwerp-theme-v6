@@ -70,7 +70,7 @@ echo '<footer>
    echo '<li><a href="'. get_sub_field('subfooter--link--url') .'" rel="noopener nofollow noreferrer">'. get_sub_field('subfooter--link--label') .'</a></li>';
  }
  echo '
-  <li><a href="" rel="noopener nofollow noreferrer" target="_blank">Design by <img class="mm-default" src="'. __DIR__ .'/../../assets/img/mm-hover.svg" alt="MM" /><img class="mm-hover" src="'. __DIR__ .'/../../assets/img/mm-orange.svg" alt="MM" /></a></li>
+  <li><a href="" rel="noopener nofollow noreferrer" target="_blank">Design by <img class="mm-default" src="'. get_template_directory_uri() .'/assets/img/mm-gray.svg" alt="MM" /><img class="mm-hover" src="'. get_template_directory_uri() .'/assets/img/mm-orange.svg" alt="MM" /></a></li>
  </section>
 </footer>' . wp_footer() . '
 <script>
