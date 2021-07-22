@@ -48,6 +48,19 @@
   transition: all 250ms ease-in-out;
 }
 
+.cta-tile-image-icon .cta-tile--image--icon--image::after
+{
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  width: 100%;
+  background-image: linear-gradient(#202020FF, #20202000);
+}
+
 .cta-tile-image-icon:hover  .cta-tile--image--icon--image
 {
     transform: scale(1.0675);
@@ -70,7 +83,7 @@
 {
   display: block;
   width: 100%;
-  padding: 30px 20px;
+  padding: 20px;
 }
 
 .cta-tile-image-icon > span.cta-tile--content::after
