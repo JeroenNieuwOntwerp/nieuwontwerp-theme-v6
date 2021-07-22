@@ -27,17 +27,18 @@
   overflow: hidden;
 }
 
-.cta-tile-image-icon img.cta-tile--image
+.cta-tile-image-icon .cta-tile--image--icon--image
 {
   position: absolute;
   width: 100%;
   height: 100%;
-  object-position: center;
-  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
   transition: all 250ms ease-in-out;
 }
 
-.cta-tile-image-icon:hover  img.cta-tile--image
+.cta-tile-image-icon:hover  .cta-tile--image--icon--image
 {
     transform: scale(1.0675);
 }
