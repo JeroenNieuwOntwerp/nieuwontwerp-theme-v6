@@ -83,7 +83,7 @@
 {
   display: block;
   width: 100%;
-  padding: 20px;
+  padding: 20px 100px 20px 20px;
 }
 
 .cta-tile-image-icon > span.cta-tile--content::after
