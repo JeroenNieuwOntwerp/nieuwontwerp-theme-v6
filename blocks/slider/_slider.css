@@ -34,6 +34,7 @@ section.slider .slick-arrow {
     border-radius: 0;
     display: block;
     position: absolute;
+    background-color: #FFFFFF;
     height: 50px;
     width: 50px;
     bottom: -57px;
@@ -45,7 +46,8 @@ section.slider .slick-arrow {
 
 section.slider .slick-arrow.slick-next
 {
-
+  left: 65px;
+  background-color: #F1F1F1;
 }
 
 section.slider .slick-arrow.slick-next::before {
