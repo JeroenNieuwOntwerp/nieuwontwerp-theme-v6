@@ -233,3 +233,23 @@ footer > section.footer__section--transparent > li > a:visited
   color: #ADB2B7;
   text-decoration: underline;
 }
+
+footer > section.footer__section--transparent > li:last-child a img.mm-default
+{
+    display: block;
+}
+
+footer > section.footer__section--transparent > li:last-child a img.mm-hover
+{
+    display: none;
+}
+
+footer > section.footer__section--transparent > li:last-child a:hover img.mm-default
+{
+    display: none;
+}
+
+footer > section.footer__section--transparent > li:last-child a:hover img.mm-hover
+{
+    display: block;
+}
