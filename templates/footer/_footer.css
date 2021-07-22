@@ -185,3 +185,45 @@ footer > section.footer__section--red h3::before
   left: -35px;
   bottom: 0px;
 }
+
+footer > section.footer__section--transparent
+{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 38px;
+  padding-bottom: 42px;
+}
+
+footer > section.footer__section--transparent > li
+{
+  display: inline-block;
+  list-style-type: none;
+  color: #ADB2B7;
+  padding-right: 1em;
+  border-right: 1px solid #ADB2B7;
+  margin-right: 1em;
+}
+
+footer > section.footer__section--transparent > li > a
+{
+  color: #ADB2B7;
+  text-decoration: none;
+}
+
+footer > section.footer__section--transparent > li > a:hover
+{
+  color: #ADB2B7;
+  text-decoration: underline;
+}
+
+footer > section.footer__section--transparent > li > a:active;
+{
+  color: #202020;
+  text-decoration: none;
+}
+
+footer > section.footer__section--transparent > li > a:visited
+{
+  color: #ADB2B7;
+  text-decoration: underline;
+}
