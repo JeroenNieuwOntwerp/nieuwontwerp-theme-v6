@@ -43,7 +43,7 @@ footer > section.footer__section--gray::before
   width: 430px;
   height: 100px;
   bottom: -100px;
-  right: -150px;
+  right: -300px;
   z-index: -1;
   background-image: url('../../assets/img/strokes-gray.svg');
   background-size: 125%;
