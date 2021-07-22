@@ -33,13 +33,23 @@ section.slider .slick-arrow {
     border: none;
     border-radius: 0;
     display: block;
-    position: relative;
+    position: absolute;
     height: 50px;
     width: 50px;
+    bottom: -57px;
     left: 15px;
     z-index: 4;
     cursor: pointer;
     text-indent: 3000px;
+}
+
+section.slider .slick-arrow.slick-next
+{
+
+}
+
+section.slider .slick-arrow.slick-next::before {
+    transform: rotate(180deg);
 }
 
 section.slider .slick-arrow.slick-prev:before,
