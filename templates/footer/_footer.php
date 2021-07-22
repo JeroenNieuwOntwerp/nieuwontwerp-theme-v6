@@ -62,13 +62,16 @@ echo '<footer>
     echo '</div>';
   };
  echo '</section>
- <section class="footer__section--transparent">';
+ <section class="footer__section--transparent">
+  <li>Dieseko Group &copy; '. date('Y') .'</li>';
  while( have_rows('footer--subfooter', 'options') )
  {
    the_row();
    echo '<li><a href="'. get_sub_field('subfooter--link--url') .'" rel="noopener nofollow noreferrer">'. get_sub_field('subfooter--link--label') .'</a></li>';
  }
- echo '</section>
+ echo '
+  <li><a href="" rel="noopener nofollow noreferrer" target="_blank">Design by <img class="mm-default" src="'. __DIR__ .'/assets/img/mm-hover.svg" alt="MM" /><img class="mm-hover" src="'. __DIR__ .'/assets/img/mm-orange.svg" alt="MM" /></a></li>
+ </section>
 </footer>' . wp_footer() . '
 <script>
 AOS.init();
