@@ -210,25 +210,25 @@ footer > section.footer__section--transparent > li:last-child
   border-right: none;
 }
 
-footer > section.footer__section--transparent > li > a:not(:last-child)
+footer > section.footer__section--transparent > li > a
 {
   color: #ADB2B7;
   text-decoration: none;
 }
 
-footer > section.footer__section--transparent > li > a:not(:last-child):hover
+footer > section.footer__section--transparent > li > a:hover
 {
   color: #ADB2B7;
   text-decoration: underline;
 }
 
-footer > section.footer__section--transparent > li > a:not(:last-child):active;
+footer > section.footer__section--transparent > li > a:active;
 {
   color: #202020;
   text-decoration: none;
 }
 
-footer > section.footer__section--transparent > li > a:not(:last-child):visited
+footer > section.footer__section--transparent > li > a:visited
 {
   color: #ADB2B7;
   text-decoration: underline;
