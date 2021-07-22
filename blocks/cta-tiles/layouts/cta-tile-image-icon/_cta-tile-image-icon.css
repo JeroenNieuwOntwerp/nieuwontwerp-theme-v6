@@ -43,7 +43,7 @@
   height: 100%;
   background-size: cover;
   background-position: center;
-  background-blend-mode: multiply;
+  filter: opacity(0.15);
   transition: all 250ms ease-in-out;
 }
 
