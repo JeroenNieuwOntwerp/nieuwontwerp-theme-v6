@@ -202,6 +202,12 @@ footer > section.footer__section--transparent > li
   padding-right: 1em;
   border-right: 1px solid #ADB2B7;
   margin-right: 1em;
+  font-size: 0.85rem;
+}
+
+footer > section.footer__section--transparent > li:last-child
+{
+  border-right: none;
 }
 
 footer > section.footer__section--transparent > li > a
