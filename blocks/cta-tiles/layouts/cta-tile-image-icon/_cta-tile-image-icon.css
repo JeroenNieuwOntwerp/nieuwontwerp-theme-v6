@@ -58,7 +58,7 @@
   right: 0;
   height: 50%;
   width: 100%;
-  background-image: linear-gradient(#202020FF, #20202000);
+  background-image: linear-gradient(#20202000, #20202050);
 }
 
 .cta-tile-image-icon:hover  .cta-tile--image--icon--image
