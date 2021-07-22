@@ -77,5 +77,5 @@ section.slider .slick-arrow.slick-next:before {
 section.slider .slick-arrow.slick-prev:hover:before,
 section.slider .slick-arrow.slick-next:hover:before
 {
-  background-image: url('../../../assets/img/chevron-red.svg');
+  background-image: url('../../assets/img/chevron-red.svg');
 }
