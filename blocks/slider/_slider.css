@@ -42,8 +42,8 @@ section.slider .slick-arrow {
     position: absolute;
     height: 50px;
     width: 50px;
-    bottom: 98px;
-    left: 0px;
+    bottom: -48px;
+    left: 10px;
     z-index: 4;
     cursor: pointer;
     text-indent: 3000px;
