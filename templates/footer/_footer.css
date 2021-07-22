@@ -35,6 +35,20 @@ footer > section.footer__section--gray
   position: relative;
 }
 
+footer > section.footer__section--gray::before
+{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 430px;
+  height: 100px;
+  bottom: -05px;
+  right: -150px;
+  z-index: -1;
+  background-image: url('../../assets/img/strokes-gray.svg');
+  background-size: 125%;
+}
+
 footer > section.footer__section--gray::after
 {
   content: '';
