@@ -79,3 +79,9 @@ section.slider .slick-arrow.slick-next:hover:before
 {
   background-image: url('../../assets/img/chevron-red.svg');
 }
+
+section.slider > .button__wrapper
+{
+  bottom: -10px;
+  left: 150px;
+}
