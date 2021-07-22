@@ -236,8 +236,10 @@ footer > section.footer__section--transparent > li > a:visited
 
 footer > section.footer__section--transparent > li:last-child a img
 {
-  height: 22px;
-  width: 44px;
+  height: 40px;
+  width: 50px;
+  transform: translate(5px, -8px);
+  position: absolute;
   object-fit: scale-down;
   object-position: center;
 }
