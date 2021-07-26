@@ -5,6 +5,11 @@
 
 section.contact-information
 {
+  width: 100%;
+  max-width: calc(50px + var(--theme__sizes__page--width));
+  margin: 0 auto;
+  padding-left: 25px;
+  padding-right: 25px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
