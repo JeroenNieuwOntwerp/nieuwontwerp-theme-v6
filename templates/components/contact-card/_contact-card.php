@@ -2,7 +2,9 @@
 defined( 'ABSPATH' ) || exit;
 
 echo '<div class="contact-card contact-id-'. get_the_ID($post) .'">
-  <img src="'. get_the_post_thumbnail_url($post, 'thumbnail') .'" />
+  <div class="image-wrapper">
+    <img src="'. get_the_post_thumbnail_url($post, 'thumbnail') .'" />
+  </div>
   <span class="contact-card-details">
     <h3 class="contact-card--title">'. get_the_title() .'</h3>';
     if(get_field('is_department') != 'yes')

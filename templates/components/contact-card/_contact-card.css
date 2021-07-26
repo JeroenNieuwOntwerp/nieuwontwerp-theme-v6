@@ -3,11 +3,30 @@
 
 }
 
-span.contact-card
+div.contact-card
 {
-  display: inline-block;
+  display: inline-flex;
   flex-basis: 250px;
   padding: 25px;
+  flex-wrap: wrap;
+}
+
+div.contact-card > div.image-wrapper
+{
+  flex-basis: 78px;
+}
+
+div.contact-card > div.image-wrapper > img
+{
+  width: 100%;
+  height: 78px;
+  border-radius: 50%;
+  border: 2px solid #DDDCDD;
+}
+
+div.contact-card > span
+{
+
 }
 
 h3.contact-card--title
