@@ -22,10 +22,12 @@ section.contact-information::before
   content: '';
   display: block;
   position: absolute;
-  height: 100%;
+  height: calc(100% + 100px);
   width: calc(100% + 100px);
+  top: -50px;
+  right: -50px;
   left: -50px;
   right: -50px;
-  background: olive;
+  background: #F1F1F1;
   z-index: -1;
 }
