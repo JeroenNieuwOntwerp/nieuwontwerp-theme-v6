@@ -20,9 +20,10 @@
 {
   padding-left: calc(calc(100% - var(--theme__sizes__textrow--width)) / 2);
 }
+
 h2.heading
 {
-  font-size: 1.875rem;
+  font-size: 1.625rem;
   line-height: 2em;
   letter-spacing: 0.068px;
   text-transform: uppercase;
