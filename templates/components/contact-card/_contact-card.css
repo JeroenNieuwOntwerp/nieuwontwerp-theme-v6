@@ -20,19 +20,23 @@ div.contact-card > div.image-wrapper > img
 {
   width: 100%;
   height: 78px;
+  object-fit: scale-down;
+  object-position: center;
   border-radius: 50%;
   border: 2px solid #DDDCDD;
 }
 
 div.contact-card > span
 {
-
+  flex-grow: 1;
+  flex-basis: 170px;
 }
 
 h3.contact-card--title
 {
     font-size: 1rem;
     font-weight: 700;
+    margin-left: 20px;
     margin-bottom: 0;
 }
 
@@ -43,6 +47,7 @@ p.contact-card--job
   text-transform: uppercase;
   letter-spacing: 0.1px;
   color: var(--theme__color--gray);
+  margin-left: 20px;
   margin-block-start: 0px;
   margin-block-end: 0px;
 }
