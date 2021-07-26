@@ -6,9 +6,15 @@
 div.contact-card
 {
   display: inline-flex;
-  flex-basis: 250px;
+  flex-basis: 380px;
   padding: 25px;
   flex-wrap: wrap;
+  border-right: 2px solid #DDDCDD;
+}
+
+div.contact-card:last-child
+{
+  border: none;
 }
 
 div.contact-card > div.image-wrapper
@@ -28,7 +34,6 @@ div.contact-card > div.image-wrapper > img
 
 div.contact-card > span
 {
-  flex-grow: 1;
   flex-basis: 170px;
 }
 
