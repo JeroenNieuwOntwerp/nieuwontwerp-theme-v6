@@ -7,6 +7,7 @@ div.contact-card
 {
   display: inline-flex;
   flex-basis: 380px;
+  box-sizing: border-box;
   padding: 25px;
   flex-wrap: wrap;
   border-right: 2px solid #DDDCDD;
