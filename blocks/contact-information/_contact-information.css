@@ -24,10 +24,10 @@ section.contact-information::before
   position: absolute;
   height: calc(100% + 100px);
   width: calc(100% + 100px);
-  top: -50px;
+  top: -75px;
   right: -50px;
   left: -50px;
-  right: -50px;
+  bottom: -25px;
   background: #F1F1F1;
   z-index: -1;
 }
