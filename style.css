@@ -35,17 +35,3 @@ Tags: webdesign,nieuw,ontwerp,nieuwontwerp,wordpress
   src: url('assets/fonts/Futura-Std-Bold.otf');
   font-display: swap;
 }
-
-.row-id-10::before
-{
-  content: '';
-  display: block;
-  height: 865px;
-  width: 100%;
-  position: absolute;
-  top: -150px;
-  left: 0px;
-  right: 0px;
-  z-index: -5;
-  background-color: #202020;
-}
