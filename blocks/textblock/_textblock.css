@@ -5,7 +5,7 @@ section.textblock
   margin: 0 auto;
 }
 
-section.textblock.text--full-width
+section.textblock.article-alignment-page
 {
   max-width: calc(25px + var(--theme__sizes__page--width));
 }
