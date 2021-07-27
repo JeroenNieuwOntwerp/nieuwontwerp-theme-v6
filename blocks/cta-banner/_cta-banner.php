@@ -2,7 +2,7 @@
 defined( 'ABSPATH' ) || exit;
 $_row_id = get_row_index();
 $_options_image = get_sub_field_object('image');
-$_options_overlay_colour = get_sub_field('background-colour');
+$_options_overlay_colour = get_sub_field('gradient-colour');
 $_options_text_colour = get_sub_field('text-colour');
 $_options_vertical_offset = get_sub_field('vertical-offset');
 $_button_options__ID = get_sub_field_object('button-url')["ID"];
