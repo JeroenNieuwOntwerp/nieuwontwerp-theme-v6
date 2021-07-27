@@ -6,11 +6,10 @@ $_row_id = get_row_index();
 $_content = get_sub_field_object('textblock--content');
 $_options_bold = get_sub_field('textblock--bold');
 $_options_border = get_sub_field('textblock--border');
-$_options_fullwidth = get_sub_field('textblock--fullwidth');
 $_options__margin_top = get_sub_field('margin-top');
 $_options__margin_bottom = get_sub_field('margin-bottom');
+$_wrapper_options = get_sub_field('textblock--fullwidth');
 $_text_options = '';
-$_wrapper_options = '';
 if($_options_bold == '1')
 {
   $_text_options .= ' text--bold';
