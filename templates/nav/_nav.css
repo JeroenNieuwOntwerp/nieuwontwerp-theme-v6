@@ -69,6 +69,30 @@ nav.nav--bars--upper
   object-position: center left;
 }
 
+.top__menu
+{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  list-style-type: none;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  padding-inline-start: 0px;
+}
+
+.top__menu li a
+{
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  font-weight: bold;
+  color: #626E79;
+}
+
+.top__menu li a:hover
+{
+  color: var(--theme__color--primary);
+}
+
 nav.nav--bars--lower
 {
   background-color: #202020;

@@ -5,7 +5,7 @@ echo '<nav class="nav--bars--upper">
   <a href="'. site_url() .'" rel="noopener nofollow noreferrer" class="home__button"><img src="'. get_template_directory_uri() .'/assets/img/logo.svg" alt="Dieseko Group B.V."</a>';
 
 $_submenu_options = array(
-  'items_wrap'      => '<ul class="web menu" id="%1$s">%3$s</ul>',
+  'items_wrap'      => '<ul class="top__menu web menu" id="%1$s">%3$s</ul>',
   'theme_location' => 'sub_menu',
   'container' => false,
   'depth' => 3,
