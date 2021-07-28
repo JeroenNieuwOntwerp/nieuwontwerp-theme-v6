@@ -13,6 +13,16 @@ a.recent-news-card
   box-shadow: var(--theme__styling__box-shadow);
 }
 
+a.recent-news-card h5
+{
+  color: #DD1742;
+  font-size: 0.6875rem;
+  line-height: 1.1em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
 a.recent-news-card .button__wrapper
 {
   transform: translateX(-20px);
