@@ -33,7 +33,7 @@ function no_customposttypes() {
   );
 
   register_post_type(
-    'hydraulic-power-packs',
+    'hydraulic-packs',
     array('labels' => array('name' => __( 'Hydraulic Power Packs' ), 'singular_name' => __( 'Hydraulic Power Pack' ), 'add_new' => __( 'New hydraulic power pack' )),
         'public' => true,
         'hierarchical' => true,
@@ -138,7 +138,7 @@ function no_customposttypes() {
   );
 
   register_post_type(
-    'electric-hydraulic-power-packs',
+    'electric-hydraulic-packs',
     array('labels' => array('name' => __( 'Electric Hydraulic Power Packs' ), 'singular_name' => __( 'Electric Hydraulic Power Pack' ), 'add_new' => __( 'New electric hydraulic power pack' )),
         'public' => true,
         'hierarchical' => true,
