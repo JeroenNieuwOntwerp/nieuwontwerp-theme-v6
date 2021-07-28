@@ -12,7 +12,10 @@ $_introduction = get_field('introduction');
 echo '<a class="recent-project-card" href="'. get_the_permalink($post) .'" rel="noopener nofollow noreferrer">
   <h2>PROJECT</h2>
   <span class="content">
-  ' . $introduction . '...';
+  <p>
+    ' . $introduction;
+    if (strlen($_introduction) > 200 ) echo '...';
+  echo '</p>';
   include(__DIR__ . '/../../button/_button.php' );
   echo '</span>
 </a>';

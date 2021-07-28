@@ -11,7 +11,10 @@ $_introduction = get_field('introduction');
 
 echo '<a class="recent-news-card" href="'. get_the_permalink($post) .'" rel="noopener nofollow noreferrer">
   <span class="content">
-  ' . $introduction . '...';
+  <p>
+    ' . $introduction;
+    if (strlen($_introduction) > 200 ) echo '...';
+  echo '</p>';
   include(__DIR__ . '/../../button/_button.php' );
   echo '</span>
 </a>';
