@@ -62,6 +62,11 @@ a.recent-project-card > span.content
   padding: 20px;
 }
 
+a.recent-project-card div
+{
+  padding-bottom: 20px;
+}
+
 a.recent-project-card p
 {
   font-size: .875rem;

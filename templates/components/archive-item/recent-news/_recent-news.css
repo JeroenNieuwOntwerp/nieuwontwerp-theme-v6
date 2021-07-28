@@ -24,6 +24,11 @@ a.recent-news-card h5
   text-transform: uppercase;
 }
 
+a.recent-news-card div
+{
+  padding-bottom: 20px;
+}
+
 a.recent-news-card p
 {
   font-size: .875rem;
