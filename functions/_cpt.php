@@ -183,6 +183,21 @@ function no_customposttypes() {
   );
 
   register_post_type(
+    'events',
+    array('labels' => array('name' => __( 'Events' ), 'singular_name' => __( 'Event' ), 'add_new' => __( 'New event' )),
+        'public' => true,
+        'hierarchical' => true,
+        'supports' => array('title', 'author', 'thumbnail', 'revisions', 'page-attributes'),
+        'capability_type' => 'page',
+        'can_export' => 'true',
+        'has_archive' => true,
+        'rewrite' => array('slug' => 'events'),
+        'menu_icon' => 'dashicons-insert',
+        'show_in_rest' => true
+      )
+  );
+
+  register_post_type(
     'brands',
     array('labels' => array('name' => __( 'Brands' ), 'singular_name' => __( 'Brand' ), 'add_new' => __( 'New brand' )),
         'public' => true,
