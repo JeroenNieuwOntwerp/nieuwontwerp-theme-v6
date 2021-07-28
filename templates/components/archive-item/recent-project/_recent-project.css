@@ -61,6 +61,12 @@ a.recent-project-card > span.content
   padding: 20px;
 }
 
+a.recent-project-card p
+{
+  font-size: .875rem;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
 
 a.recent-project-card .button__wrapper
 {

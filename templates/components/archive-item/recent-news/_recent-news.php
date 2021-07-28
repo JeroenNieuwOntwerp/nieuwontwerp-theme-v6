@@ -12,10 +12,10 @@ $_introduction = get_field('introduction');
 echo '<a class="recent-news-card" href="'. get_the_permalink($post) .'" rel="noopener nofollow noreferrer">
   <span class="content">
   <h5>news</h5>
-  <p>
+  <div>
     ' . substr($_introduction, 0, 100);
     if (strlen($_introduction) > 100 ) echo '...';
-  echo '</p>';
+  echo '</div>';
   include(__DIR__ . '/../../button/_button.php' );
   echo '</span>
 </a>';

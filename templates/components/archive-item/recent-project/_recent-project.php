@@ -16,10 +16,10 @@ echo '<a class="recent-project-card" href="'. get_the_permalink($post) .'" rel="
   </div>
   <span class="content">
     <h5>project</h5>
-    <p>
+    <div>
       ' . substr($_introduction, 0, 100);
       if (strlen($_introduction) > 100 ) echo '...';
-    echo '</p>';
+    echo '</div>';
     include(__DIR__ . '/../../button/_button.php' );
   echo '</span>
 </a>';

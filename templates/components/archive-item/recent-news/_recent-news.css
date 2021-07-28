@@ -23,6 +23,13 @@ a.recent-news-card h5
   text-transform: uppercase;
 }
 
+a.recent-news-card p
+{
+  font-size: .875rem;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
 a.recent-news-card .button__wrapper
 {
   transform: translateX(-20px);
