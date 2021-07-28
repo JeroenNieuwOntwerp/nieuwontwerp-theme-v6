@@ -9,3 +9,8 @@ a.recent-projects-card
   flex-basis: 585px;
   padding: 20px;
 }
+
+a.recent-projects-card .button__wrapper
+{
+  transform: translateX(-20px);
+}

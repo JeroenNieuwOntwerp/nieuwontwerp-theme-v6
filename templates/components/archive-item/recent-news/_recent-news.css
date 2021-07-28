@@ -10,3 +10,8 @@ a.recent-news-card
   padding: 20px;
   box-shadow: var(--theme__styling__box-shadow);
 }
+
+a.recent-news-card .button__wrapper
+{
+  transform: translateX(-20px);
+}
