@@ -338,11 +338,30 @@ function no_customposttypes() {
 		array
 		(
 			"hierarchical" => true,
-			"label" => "Related Products ",
-			"singular_label" => "Related product ",
+			"label" => "Related Products",
+			"singular_label" => "Related product",
 			'update_count_callback' => '_update_post_term_count',
 			'query_var' => true,
-			'rewrite' => array( 'slug' => 'related-products ', 'with_front' => false ),
+			'rewrite' => array( 'slug' => 'related-products', 'with_front' => false ),
+			'public' => true,
+			'show_ui' => true,
+			'show_tagcloud' => true,
+			'_builtin' => false,
+			'show_in_nav_menus' => true
+		)
+	);
+
+  register_taxonomy(
+		'brand-crossref',
+		array('brands', 'dredging-equipment', 'vibroflots', 'eh-power-packs', 'rotary-heads', 'impact-hammers', 'piling-drilling-rigs', 'resonators', 'pressing-machines', 'hydraulic-clamps', 'hydraulic-packs', 'vibratory-hammers'),
+		array
+		(
+			"hierarchical" => true,
+			"label" => "Brand",
+			"singular_label" => "Brand",
+			'update_count_callback' => '_update_post_term_count',
+			'query_var' => true,
+			'rewrite' => array( 'slug' => 'brand', 'with_front' => false ),
 			'public' => true,
 			'show_ui' => true,
 			'show_tagcloud' => true,
