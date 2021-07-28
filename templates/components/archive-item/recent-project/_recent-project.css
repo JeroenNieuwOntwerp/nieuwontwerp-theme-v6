@@ -1,0 +1,10 @@
+:root
+{
+
+}
+
+a.recent-projects-card
+{
+  flex-basis: 585px;
+  padding: 20px;
+}

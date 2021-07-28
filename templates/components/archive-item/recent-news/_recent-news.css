@@ -1,0 +1,11 @@
+:root
+{
+
+}
+
+a.recent-news-card
+{
+  flex-basis: 278px;
+  padding: 20px;
+  box-shadow: var(--theme__styling__box-shadow);
+}

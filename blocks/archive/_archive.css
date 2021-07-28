@@ -1,9 +1,9 @@
 :root
 {
-  --archive__flex--gap: 20px;
+  --archive__flex--gap: 30px;
 }
 
-section.archive-flex
+section.archive
 {
   display: flex;
   flex-wrap: wrap;
