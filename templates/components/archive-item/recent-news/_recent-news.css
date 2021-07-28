@@ -10,6 +10,8 @@ a.recent-news-card
   padding: 20px;
   box-sizing: border-box;
   box-shadow: var(--theme__styling__box-shadow);
+  text-decoration: none;
+  color: #202020;
 }
 
 a.recent-news-card h5
@@ -27,7 +29,6 @@ a.recent-news-card p
   font-size: .875rem;
   margin-block-start: 0em;
   margin-block-end: 0em;
-  text-decoration: none;
 }
 
 a.recent-news-card .button__wrapper
