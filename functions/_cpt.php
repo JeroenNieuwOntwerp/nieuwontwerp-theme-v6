@@ -183,7 +183,7 @@ function no_customposttypes() {
   );
 
   register_post_type(
-    'events',
+    'event',
     array('labels' => array('name' => __( 'Events' ), 'singular_name' => __( 'Event' ), 'add_new' => __( 'New event' )),
         'public' => true,
         'hierarchical' => true,
