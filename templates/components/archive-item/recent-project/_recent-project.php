@@ -11,14 +11,16 @@ $_introduction = get_field('introduction');
 $_item_image = get_field_object('thumbnail', $post);
 
 echo '<a class="recent-project-card" href="'. get_the_permalink($post) .'" rel="noopener nofollow noreferrer">
-  <img class="recent-project--image image-id-'. $_item_image["ID"] .'" src="' . $_item_image["value"]["url"] . '" alt="'. $_item_image["value"]["alt"] . '" />
+  <div class="image-wrapper">
+    <img class="recent-project--image image-id-'. $_item_image["ID"] .'" src="' . $_item_image["value"]["url"] . '" alt="'. $_item_image["value"]["alt"] . '" />
+  </div>
   <span class="content">
-  <h5>project</h5>
-  <p>
-    ' . $introduction;
-    if (strlen($_introduction) > 200 ) echo '...';
-  echo '</p>';
-  include(__DIR__ . '/../../button/_button.php' );
+    <h5>project</h5>
+    <p>
+      ' . $introduction;
+      if (strlen($_introduction) > 200 ) echo '...';
+    echo '</p>';
+    include(__DIR__ . '/../../button/_button.php' );
   echo '</span>
 </a>';
 

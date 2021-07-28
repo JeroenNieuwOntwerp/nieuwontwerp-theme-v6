@@ -5,10 +5,33 @@
 
 a.recent-projects-card
 {
-  display: inline-block;
+  display: inline-flex;
   flex-basis: 585px;
-  padding: 20px;
+  height: 185px;
+  justify-content: space-between;
 }
+
+a.recent-projects-card > div.image-wrapper
+{
+  flex-basis: 278px;
+  position: relative;
+  height: 160px;
+}
+
+a.recent-projects-card > div.image-wrapper > img
+{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: scale-down;
+  object-position: center;
+}
+
+a.recent-projects-card > span.content
+{
+  flex-basis: 278px;
+}
+
 
 a.recent-projects-card .button__wrapper
 {

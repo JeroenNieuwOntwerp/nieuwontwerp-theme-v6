@@ -7,6 +7,7 @@ a.recent-news-card
 {
   display: inline-block;
   flex-basis: 278px;
+  height: 185px;
   padding: 20px;
   box-shadow: var(--theme__styling__box-shadow);
 }
