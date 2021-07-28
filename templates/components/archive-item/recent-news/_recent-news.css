@@ -9,6 +9,7 @@ a.recent-news-card
   flex-basis: 278px;
   height: 185px;
   padding: 20px;
+  box-sizing: border-box;
   box-shadow: var(--theme__styling__box-shadow);
 }
 

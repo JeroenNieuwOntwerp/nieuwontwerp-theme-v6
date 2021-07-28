@@ -7,6 +7,7 @@ a.recent-project-card
 {
   display: inline-flex;
   position: relative;
+  box-sizing: border-box;
   flex-basis: 585px;
   height: 185px;
   justify-content: space-between;
@@ -29,6 +30,7 @@ a.recent-project-card::after
 a.recent-project-card > div.image-wrapper
 {
   flex-basis: 278px;
+  box-sizing: border-box;
   position: relative;
   height: 160px;
 }
@@ -45,6 +47,7 @@ a.recent-project-card > div.image-wrapper > img
 a.recent-project-card > span.content
 {
   flex-basis: 278px;
+  box-sizing: border-box;
   padding: 20px;
 }
 
