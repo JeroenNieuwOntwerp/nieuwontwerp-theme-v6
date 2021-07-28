@@ -26,6 +26,14 @@ function no_acf_option_pages() {
           'capability'    => 'edit_posts',
           'redirect'      => false
       ));
+
+      $option_page = acf_add_options_page(array(
+          'page_title'    => __('Locations & Dealers'),
+          'menu_title'    => __('Locations & Dealers'),
+          'menu_slug'     => 'locations-dealers',
+          'capability'    => 'edit_posts',
+          'redirect'      => false
+      ));
 };
 
 ?>
