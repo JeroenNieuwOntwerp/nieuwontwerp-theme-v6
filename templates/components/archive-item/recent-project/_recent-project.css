@@ -5,6 +5,7 @@
 
 a.recent-projects-card
 {
+  display: inline-block;
   flex-basis: 585px;
   padding: 20px;
 }
