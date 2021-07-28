@@ -31,6 +31,7 @@ a.recent-news-card h5::before
   content: '';
   display: block;
   position: absolute;
+  top: -2px;
   height: 15px;
   width: 15px;
   background-image: url('../../../../assets/img/news-icon.svg');
