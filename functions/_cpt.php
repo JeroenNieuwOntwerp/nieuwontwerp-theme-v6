@@ -138,7 +138,7 @@ function no_customposttypes() {
   );
 
   register_post_type(
-    'electric-hydraulic-packs',
+    'eh-power-packs',
     array('labels' => array('name' => __( 'Electric Hydraulic Power Packs' ), 'singular_name' => __( 'Electric Hydraulic Power Pack' ), 'add_new' => __( 'New electric hydraulic power pack' )),
         'public' => true,
         'hierarchical' => true,
