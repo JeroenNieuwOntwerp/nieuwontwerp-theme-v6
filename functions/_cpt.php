@@ -93,7 +93,7 @@ function no_customposttypes() {
   );
 
   register_post_type(
-    'piling-and-drilling-rigs',
+    'piling-drilling-rigs',
     array('labels' => array('name' => __( 'Piling & Drilling Rigs' ), 'singular_name' => __( 'Piling & Drilling Rig' ), 'add_new' => __( 'New piling & drilling rig' )),
         'public' => true,
         'hierarchical' => true,
