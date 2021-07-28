@@ -17,7 +17,7 @@ echo '<a class="recent-project-card" href="'. get_the_permalink($post) .'" rel="
   <span class="content">
     <h5>project</h5>
     <p>
-      ' . $introduction;
+      ' . $_introduction;
       if (strlen($_introduction) > 200 ) echo '...';
     echo '</p>';
     include(__DIR__ . '/../../button/_button.php' );

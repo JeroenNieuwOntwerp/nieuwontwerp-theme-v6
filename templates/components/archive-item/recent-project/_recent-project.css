@@ -13,6 +13,16 @@ a.recent-project-card
   justify-content: space-between;
 }
 
+a.recent-project-card h5
+{
+  color: #DD1742;
+  font-size: 0.6875rem;
+  line-height: 1.1em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
 a.recent-project-card::after
 {
   content: '';
