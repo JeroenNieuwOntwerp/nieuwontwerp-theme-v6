@@ -21,6 +21,11 @@ if( $_options__archive_type == 'custom' )
     'orderby' => 'date',
     'order' => 'DESC'
   );
+  if( $_options__archive_type == 'related-products')
+  {
+    $_related_product = get_sub_field('related-products--product');
+    $_project_args['tax_query'][] = array('taxonomy' => 'related-products', 'terms' =>  $_related_product['value']['name'] , 'field' => 'name');  
+  }
   $_project_query = new WP_Query($_project_args);
   if( $_project_query->have_posts() )
   {
@@ -50,6 +55,11 @@ if( $_options__archive_type == 'custom' )
     'orderby' => 'date',
     'order' => 'DESC'
   );
+  if( $_options__archive_type == 'related-products')
+  {
+    $_related_product = get_sub_field('related-products--product');
+    $_news_args['tax_query'][] = array('taxonomy' => 'related-products', 'terms' =>  $_related_product['value']['name'] , 'field' => 'name');
+  }
   $_news_query = new WP_Query($_news_args);
   if( $_news_query->have_posts() )
   {
