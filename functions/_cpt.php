@@ -18,6 +18,21 @@ function no_customposttypes() {
   );
 
   register_post_type(
+    'brands',
+    array('labels' => array('name' => __( 'Brands' ), 'singular_name' => __( 'Brand' ), 'add_new' => __( 'New brand' )),
+        'public' => true,
+        'hierarchical' => true,
+        'supports' => array('title', 'author', 'thumbnail', 'revisions', 'page-attributes'),
+        'capability_type' => 'page',
+        'can_export' => 'true',
+        'has_archive' => true,
+        'rewrite' => array('slug' => 'our-brands'),
+        'menu_icon' => 'dashicons-insert',
+        'show_in_rest' => true
+      )
+  );
+
+  register_post_type(
     'innovations',
     array('labels' => array('name' => __( 'Innovations' ), 'singular_name' => __( 'Innovation' ), 'add_new' => __( 'New innovation' )),
         'public' => true,
